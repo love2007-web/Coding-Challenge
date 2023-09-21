@@ -77,7 +77,7 @@ const Home = () => {
                 src={require("./images/man-wearing-smart-glasses-touching-virtual-screen 1.png")}
                 alt=""
               />
-              <img className="absolute bottom-0 animate-ping" src={require("./images/Image 1.png")} alt="" />
+              <img className="absolute bottom-0 animate-pulse" src={require("./images/Image 1.png")} alt="" />
             </div>
           </div>
         </div>
