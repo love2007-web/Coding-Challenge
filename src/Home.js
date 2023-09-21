@@ -56,19 +56,28 @@ const Home = () => {
 
           {/* countdown */}
           <div className="countdown flex justify-center mt-5">
-            <div className="flex">
+            <div className="flex text-3xl">
               <h1 className="tracking-widest">
-                00<small>H</small>
+                00<small className="text-sm">H</small>
               </h1>{" "}
               &nbsp;&nbsp;&nbsp;
               <h1 className="tracking-widest">
-                00<small>M</small>
+                00<small className="text-sm">M</small>
               </h1>{" "}
               &nbsp;&nbsp;&nbsp;
               <h1 className="tracking-widest">
-                00<small>S</small>
+                00<small className="text-sm">S</small>
               </h1>
               &nbsp;
+            </div>
+          </div>
+          <div className="relative">
+            <div className="mt-12">
+              <img
+                src={require("./images/man-wearing-smart-glasses-touching-virtual-screen 1.png")}
+                alt=""
+              />
+              <img className="absolute bottom-0 animate-ping" src={require("./images/Image 1.png")} alt="" />
             </div>
           </div>
         </div>
