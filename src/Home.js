@@ -51,9 +51,25 @@ const Home = () => {
           </div>
           {/* register */}
           <div className="flex justify-center mt-5">
-            <button className="btn register px-5 py-2 rounded">
-              Register
-            </button>
+            <button className="btn register px-5 py-2 rounded">Register</button>
+          </div>
+
+          {/* countdown */}
+          <div className="countdown flex justify-center mt-5">
+            <div className="flex">
+              <h1 className="tracking-widest">
+                00<small>H</small>
+              </h1>{" "}
+              &nbsp;&nbsp;&nbsp;
+              <h1 className="tracking-widest">
+                00<small>M</small>
+              </h1>{" "}
+              &nbsp;&nbsp;&nbsp;
+              <h1 className="tracking-widest">
+                00<small>S</small>
+              </h1>
+              &nbsp;
+            </div>
           </div>
         </div>
       </main>

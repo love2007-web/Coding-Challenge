@@ -22,3 +22,9 @@
 .register{
     background-image: linear-gradient(to right, #d434fe, #903aff);
 }
+.register:hover{
+    
+}
+.countdown{
+    font-family: 'Oswald';
+}
