@@ -37,14 +37,22 @@ export default function Register() {
 const RegisterForm = () => {
 
     let [isOpen, setIsOpen] = useState(false)
+    let [isOpenFailed, setIsOpenFailed] = useState(false)
 
     function closeModal() {
         console.log(isOpen)
         setIsOpen(false)
     }
+    function closeModalFailed() {
+        console.log(isOpenFailed)
+        setIsOpenFailed(false)
+    }
 
     function openModal() {
         setIsOpen(true)
+    }
+    function openModalFailed() {
+        setIsOpenFailed(true)
     }
     const [formData, setFormData] = useState({
         first_name: "",
@@ -69,13 +77,12 @@ const RegisterForm = () => {
       
     }, [])
     
-    console.log(post);
 
     const [teamName, setteamName] = useState("")
     const [phoneNumber, setphoneNumber] = useState("")
     const [email, setemail] = useState("")
     const [projectTopic, setprojectTopic] = useState("")
-    const [groupSize, setgroupSize] = useState("")
+    const [groupSize, setgroupSize] = useState(1)
     const [privacyPolicyAccepted, setprivacyPolicyAccepted] = useState(false)
     
    async function register(){
@@ -102,8 +109,10 @@ const RegisterForm = () => {
          )
          .then((response) => {
            console.log(response.data);
+           openModal();
          }).catch((err)=>{
             console.log(err);
+            openModalFailed()
          });
     }
 
@@ -124,11 +133,11 @@ const RegisterForm = () => {
     const [selectedPerson, setSelectedPerson] = useState(null)
     const [selectedGroup, setSelectedGroup] = useState(null)
     const [selectedId, setselectedId] = useState("")
+    const [selected, setselected] = useState(Number)
 
     const submit = (e) => {
         e.preventDefault()
         register()
-        
     }
 
     return (
@@ -424,6 +433,54 @@ const RegisterForm = () => {
                         type="button"
                         className="w-full"
                         onClick={closeModal}
+                      >
+                        Back
+                      </Button>
+                    </div>
+                  </Dialog.Panel>
+                </Transition.Child>
+              </div>
+            </div>
+          </Dialog>
+        </Transition>
+        <Transition appear show={isOpenFailed} as={Fragment}>
+          <Dialog as="div" className="relative z-10" onClose={closeModalFailed}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0 bg-[#150e28ed]" />
+            </Transition.Child>
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex min-h-full items-center justify-center p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                  <Dialog.Panel className="w-full max-w-[669px] transform overflow-hidden rounded-2xl bg-transparent border-[1px] border-primary px-6 pt-4 pb-8 lg:pb-16 lg:px-12 text-left align-middle shadow-xl transition-all">
+                    <header className="grid place-items-center text-center gap-4">
+                      <Dialog.Title
+                        as="h1"
+                        className="font-medium lg:text-[32px] font-semibold text-white font-bold"
+                      >
+                        Request Failed with status code 400
+                      </Dialog.Title>
+                    </header>
+                    <div className="mt-8">
+                      <Button
+                        type="button"
+                        className="w-full"
+                        onClick={closeModalFailed}
                       >
                         Back
                       </Button>
