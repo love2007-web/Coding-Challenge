@@ -35,7 +35,7 @@ export default function Home() {
         <Timeline />
         <Rewards />
         <Partners />
-        
+        <Policy/>
       </div>
     </>
   );
@@ -530,106 +530,88 @@ const Partners = () => {
     </div>
   );
 
-  const Privacy = () => {
-    return (
-      <div className="relative ">
-        <img
-          className="absolute z-40 bottom-10 left-0 inset-x-1/2"
-          src={faqBrightStar}
-          alt="faq image"
-        />
-        <img
-          className="absolute z-40 top-10 inset-x-1/2"
-          src={faqBrightStar}
-          alt="faq image"
-        />
-        <img
-          className="absolute z-10 top-40 -left-20"
-          src={lens}
-          alt="blur image"
-        />
-        <div className="my-10">
-          <Container className="grid grid-cols-2 gap-x-2 py-24">
-            <div className="flex items-center justify-center relative">
-              <div className="relative z-20">
-                <h2 className="text-4xl relative font-bold">
-                  <span>Privacy Policy and</span> <br />
-                  <span className="text-primary">Terms</span>
-                </h2>
-
-                <p className="text-xs mt-2">
-                  Last updated on September 12, 2023
+};
+const Policy = () => {
+  return (
+    <div className="bg-[#110b20] py-[74px] border-b-[1px] border-b-[#FFFFFF2E]">
+      <Container className="py-20">
+        <div className="grid lg:grid-cols-2 gap-[50px]">
+          <section>
+            <header className="text-white relative mb-14">
+              <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
+                Privacy Policy and{" "}
+              </h1>
+              <h1 className="relative z-2 text-[32px] text-primary font-clashdisplay font-bold">
+                Terms{" "}
+              </h1>
+              <p className="pt-4 text-[14px] text-[#FFFFFFBF]">
+                Last updated on September 12, 2023{" "}
+              </p>
+              <p className="pt-8 text-[14px]">
+                Below are our privacy & policy, which outline a lot of goodies.
+                it&rsquo;s our aim to always take of our participant
+              </p>
+            </header>
+            <div className="border-[1px] border-primary w-full max-w-[569px] py-[59px] rounded-[5px]">
+              <p className="text-white text-[14px] px-[15px] lg:px-[72px] leading-[30px] pb-[24px]">
+                At getlinked tech Hackathon 1.0, we value your privacy and are
+                committed to protecting your personal information. This Privacy
+                Policy outlines how we collect, use, disclose, and safeguard
+                your data when you participate in our tech hackathon event. By
+                participating in our event, you consent to the practices
+                described in this policy.
+              </p>
+              <div className="pl-[22px] lg:pl-[72px] pr-[22px] lg:pr-[39px]">
+                <h1 className="relative z-2 text-primary font-clashdisplay font-bold">
+                  Licensing Policy{" "}
+                </h1>
+                <p className="text-white font-bold leading-[30px]">
+                  Here are terms of our Standard License:
                 </p>
-
-                <p className="text-sm mt-6 leading-7">
-                  Below are our privacy & policy, which outline a lot of
-                  goodies. it's our aim to always take of our participant
-                </p>
-
-                <div className="mt-10">
-                  <div
-                    className="relative z-50 rounded-md py-16 px-16"
-                    style={{
-                      background: "#d9d9d908",
-                      border: "1px solid #d434fe",
-                    }}
-                  >
-                    <p className="text-sm">
-                      At getlinked tech Hackathon 1.0, we value your privacy and
-                      are committed to protecting your personal information.
-                      This Privacy Policy outlines how we collect, use,
-                      disclose, and safeguard your data when you participate in
-                      our tech hackathon event. By participating in our event,
-                      you consent to the practices described in this policy.
+                <ul className="flex flex-col gap-4 pt-5 pb-6">
+                  <li className="flex gap-4">
+                    <img
+                      src="/icons/checked.svg"
+                      alt="Checked"
+                      className="w-[17px] h-[17px] mt-2"
+                    />
+                    <p className="text-white text-[14px] leading-[30px]">
+                      The Standard License grants you a non-exclusive right to
+                      navigate and register for our event
                     </p>
-
-                    <div className="mt-10">
-                      <p className="text-sm font-bold text-primary">
-                        {" "}
-                        Licensing Policy{" "}
-                      </p>
-                      <p> Here are terms of our Standard License: </p>
-
-                      <ul className="mt-4 space-y-4">
-                        <li className="flex items-start space-x-2">
-                          <img src={dots} alt="green dots" />
-                          <span className="leading-6 text-sm">
-                            The Standard License grants you a non-exclusive
-                            right to navigate and register for our event
-                          </span>
-                        </li>
-
-                        <li className="flex items-start space-x-2">
-                          <img src={dots} alt="green dots" />
-                          <span className="leading-6 text-sm">
-                            You are licensed to use the item available at any
-                            free source sites, for your project developement
-                          </span>
-                        </li>
-
-                        <div className="flex items-center justify-center text-center">
-                          <Button>Read More</Button>
-                        </div>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                  </li>
+                  <li className="flex gap-4">
+                    <img
+                      src="/icons/checked.svg"
+                      alt="Checked"
+                      className="w-[17px] h-[17px] mt-2"
+                    />
+                    <p className="text-white text-[14px] leading-[30px]">
+                      You are licensed to use the item available at any free
+                      source sites, for your project developement
+                    </p>
+                  </li>
+                </ul>
+                <Button className="mx-auto">Read More</Button>
               </div>
             </div>
-
-            <div className="flex  items-center relative justify-center">
-              <div>
-                <img src={lock} alt="icon" className="relative z-40" />
-                <img
-                  src={lockSign}
-                  alt="lock sign"
-                  className="absolute z-10 top-0 left-20"
-                />
-              </div>
-            </div>
-          </Container>
+          </section>
+          <section>
+            <figure className="flex relative h-full">
+              <img
+                src="/images/privacy.svg"
+                alt="Privacy"
+                className="self-end"
+              />
+              <img
+                src="/images/safeguard.svg"
+                alt="Safeguard"
+                className="absolute top-0"
+              />
+            </figure>
+          </section>
         </div>
-      </div>
-    );
-  };
+      </Container>
+    </div>
+  );
 };
