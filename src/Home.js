@@ -62,7 +62,7 @@ const Home = () => {
             {/* register */}
             <div className="flex justify-center mt-5">
               <button className="btn register px-5 py-2 rounded">
-                Register
+                Regis
               </button>
             </div>
 
