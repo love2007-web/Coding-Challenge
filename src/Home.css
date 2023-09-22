@@ -17,7 +17,7 @@
  color: #d434fe
 }
 .main{
-    font-family: 'Nunito Sans';
+    font-family: 'Roboto';
 }
 .register{
     background-image: linear-gradient(to right, #d434fe, #903aff);
@@ -27,4 +27,10 @@
 }
 .countdown{
     font-family: 'Oswald';
+}
+body{
+    font-family: 'Roboto';
+}
+.line{
+    left: 1120px;
 }
