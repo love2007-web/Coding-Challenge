@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Unica+One:regular);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@layer base {
+  html {
+    font-family: Montserrat, system-ui, sans-serif;
+  }
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url("/fonts/ClashDisplay-Extralight.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url("/fonts/ClashDisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url("/fonts/ClashDisplay-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url("/fonts/ClashDisplay-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url("/fonts/ClashDisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+.custom-scroll-bar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-button:start:decrement,
+.custom-scroll-bar::-webkit-scrollbar-button:end:increment {
+  display: block;
+  height: 10px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-button:vertical:increment {
+  background-color: #fff;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-track-piece {
+  background-color: #eee;
+  -webkit-border-radius: 3px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: #d434fe;
+  -webkit-border-radius: 3px;
+}
+
+.custom-scroll-bar::-webkit-scrollbar-thumb:horizontal {
+  width: 50px;
+  background-color: #d434fe;
+  -webkit-border-radius: 3px;
+}
+
+.timeline-gradient-circle{
+  background: linear-gradient(270deg, #903AFF 0%, #D434FE 100%);
+}
+
+.bronze-medal-gradient{
+  background: linear-gradient(0deg, #D434FE, #D434FE), linear-gradient(0deg, rgba(212, 52, 254, 0.12), rgba(212, 52, 254, 0.12));
+}
