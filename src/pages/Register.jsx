@@ -10,9 +10,9 @@ import { Dialog } from '@headlessui/react'
 import SEO from "../components/Seo";
 import appService from "../services/app";
 import authService from "../services/auth";
-import toast from "react-hot-toast";
+import { toast } from "react-toastify";
 import validator from 'validator';
-import HttpErrorException from "../utlis/HttpErrrorException";
+import HttpErrorException from "../utils/HttpErrrorException";
 
 export default function Register() {
 
@@ -110,15 +110,15 @@ const RegisterForm = () => {
         e.preventDefault()
 
         if (!formData.email || !formData.phone_number || !formData.team_name || !formData.project_topic || !selectedGroups?.name || !selectedCategory?.id) {
-            return toast.error("All form inputs are required!")
+            return toast.error("All input fields are required")
         }
 
         if(!checked){
-            return toast.error("Accept our terms and conditions")
+            return toast.error("Ensure you have accepted our terms and conditions")
         }
 
         if (!validator.isEmail(formData.email)) {
-            return toast.error("Invalid email!")
+            return toast.error("Invalid email address. Check your email address and try again")
         }
 
         const payload = {
