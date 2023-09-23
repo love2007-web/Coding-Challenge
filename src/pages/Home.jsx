@@ -56,8 +56,7 @@ const Hero = () => {
             alt="purple lens flare"
             className="hidden animate-pulse lg:block absolute pointer-events-none top-[-100px] left-[600px] mix-blend-hard-light"
           />
-          <h1 className="font-bold italic py-6 lg:text-[36px] text-white relative z-2 text-center lg:text-right">
-            <Typist avgTypingDelay={200}>
+            <h1 className="font-bold italic py-6 lg:text-[36px] text-white relative z-2 text-center lg:text-right">
               Igniting a Revolution in{" "}
               <span className="relative">
                 HR Innovation{" "}
@@ -66,8 +65,8 @@ const Hero = () => {
                   className="bottom-[-10px] lg:bottom-[-15px] left-[2px] absolute"
                 />
               </span>
-            </Typist>
-          </h1>
+            </h1>
+
         </Container>
         <div className="border-b-[1px] border-[#ffffff2e]">
           <Container className="grid lg:grid-cols-2 pt-8 lg:pt-24 !px-0 lg:!pl-12">
