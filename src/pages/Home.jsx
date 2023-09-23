@@ -10,9 +10,6 @@ import { faqsData } from "../data/faqs";
 import { TimelineLeft, TimelineMobile, TimelineRight } from "../components/Timeline";
 import { timelineData } from "../data/timeline";
 import Footer from "../layout/Footer";
-import Typist from "react-typist";
-import 'react-typist/dist/standalone/Typist'
-import 'react-typist/dist/Typist.css'
 
 export default function Home() {
 
