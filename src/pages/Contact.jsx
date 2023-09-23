@@ -219,7 +219,7 @@ const ContactForm = () => {
         <img
           src="/images/purple-lens-flare-right.svg"
           alt="purple lens flare"
-          className="absolute pointer-events-none lg:bottom-[-50%] lg:right-[-60%] mix-blend-hard-light"
+          className="absolute animate-pulse pointer-events-none lg:bottom-[-50%] lg:right-[-60%] mix-blend-hard-light"
         />
       </div>
     );
