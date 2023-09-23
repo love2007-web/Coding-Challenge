@@ -10,6 +10,9 @@ import { faqsData } from "../data/faqs";
 import { TimelineLeft, TimelineMobile, TimelineRight } from "../components/Timeline";
 import { timelineData } from "../data/timeline";
 import Footer from "../layout/Footer";
+import Typist from "react-typist";
+import 'react-typist/dist/standalone/Typist'
+import 'react-typist/dist/Typist.css'
 
 export default function Home() {
 
@@ -54,14 +57,16 @@ const Hero = () => {
             className="hidden animate-pulse lg:block absolute pointer-events-none top-[-100px] left-[600px] mix-blend-hard-light"
           />
           <h1 className="font-bold italic py-6 lg:text-[36px] text-white relative z-2 text-center lg:text-right">
-            Igniting a Revolution in{" "}
-            <span className="relative">
-              HR Innovation{" "}
-              <img
-                src="/images/curved-line.svg"
-                className="bottom-[-10px] lg:bottom-[-15px] left-[2px] absolute"
-              />
-            </span>
+            <Typist avgTypingDelay={200}>
+              Igniting a Revolution in{" "}
+              <span className="relative">
+                HR Innovation{" "}
+                <img
+                  src="/images/curved-line.svg"
+                  className="bottom-[-10px] lg:bottom-[-15px] left-[2px] absolute"
+                />
+              </span>
+            </Typist>
           </h1>
         </Container>
         <div className="border-b-[1px] border-[#ffffff2e]">
