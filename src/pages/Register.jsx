@@ -8,6 +8,8 @@ import { nanoid } from "nanoid";
 import { Dialog } from '@headlessui/react'
 import SEO from "../components/Seo";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css'
 
 export default function Register() {
 
@@ -352,7 +354,7 @@ const RegisterForm = () => {
                 </p>
                 <div className="flex gap-3 items-center">
                   <div className="">
-                    <input type="checkbox" />
+                    <input type="checkbox" checked={privacyPolicyAccepted} set  />
                   </div>
                   <p className="text-white relative z-2">
                     I agreed with the event terms and conditions and privacy
