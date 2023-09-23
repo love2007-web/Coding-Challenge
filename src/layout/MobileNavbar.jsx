@@ -11,7 +11,7 @@ export default function MobileNavbar({ visible, closeHandler }) {
                 className={`bg-[#00000066] h-[100vh] w-full fixed z-[8888] top-0 left-0 ${visible ? "block" : "hidden"}`}
             >
             </div>
-            <nav className={`w-full max-w-[full] min-h-[492px] pl-[47px] pr-[51px] py-[47px] rounded-[8px] bg-[#150E28] fixed top-0 transition-all z-[9999] ${visible ? "right-0" : "right-[-348px]"}`}>
+            <nav className={`w-full max-w-[full] min-h-[492px] pl-[47px] pr-[51px] py-[47px] rounded-[8px] bg-[#150E28] fixed top-0 transition-all z-[9999] ${visible ? "right-0" : "right-[-448px]"}`}>
                 <div className="flex justify-end mb-12">
                     <div
                         onClick={closeHandler}
