@@ -38,7 +38,7 @@ export default function Navbar({ className, buttonType }) {
                             <span className="text-white">
                                 <a href="/#faqs" className="hover:text-primary">Faqs</a>
                             </span>
-                            <Link to='/contact' className="text-transparent bg-clip-text bg-primary-gradient">Contact</Link>
+                            <Link to='/contact' className="text-white">Contact</Link>
                         </div>
                         {
                             buttonType === "gradient" ?
