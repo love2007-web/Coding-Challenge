@@ -14,7 +14,7 @@ import {
 } from "../components/Timeline";
 import { timelineData } from "../data/timeline";
 import Footer from "../layout/Footer";
-import ReactTyped from "react-typed";
+// import ReactTyped from "react-typed";
 import CountDown from "../components/CountDown";
 
 export default function Home() {
@@ -55,14 +55,9 @@ const Hero = () => {
           className="hidden animate-pulse lg:block absolute pointer-events-none top-[-100px] left-[600px] mix-blend-hard-light"
         />
         <h1 className="font-bold italic py-6 lg:text-[36px] text-white relative z-2 text-center lg:text-right">
-          <ReactTyped
-            strings={["Igniting a Revolution in HR Innovation"]}
-            typeSpeed={150}
-            loop
-            backSpeed={100}
-          />{" "}
+          Igniting a Revolution in {" "}
           <span className="relative">
-            {" "}
+            HR Innovation{" "}
             <img
               src="/images/curved-line.svg"
               className="bottom-[-10px] lg:bottom-[-15px] left-[2px] absolute"
@@ -797,7 +792,7 @@ const Policy = () => {
             </div>
           </section>
           <section>
-            <figure className="grid  place-items-center relative h-full">
+            <figure className="grid place-items-center relative h-full">
               <img
                 src="/images/privacy.svg"
                 alt="Privacy"
