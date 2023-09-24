@@ -69,12 +69,12 @@ const Hero = () => {
             <img
               src="/icons/star-grey.svg"
               alt="Star Grey"
-              className="absolute animate-ping w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[228px] lg:top-[66%] right-[15%] lg:left-[30%] pointer-events-none"
+              className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[228px] lg:top-[66%] right-[15%] lg:left-[30%] pointer-events-none"
             />
             <img
               src="/icons/star-grey.svg"
               alt="Star Grey"
-              className="absolute animate-ping lg:hidden w-[6px] h-[8px] top-[10px] right-[5%] pointer-events-none"
+              className="absolute animate-pulse lg:hidden w-[6px] h-[8px] top-[10px] right-[5%] pointer-events-none"
             />
             <header className="grid place-items-center lg:place-items-start px-[30px] lg:px-0 lg:flex flex-col gap-5 pb-8">
               <img
@@ -86,7 +86,7 @@ const Hero = () => {
                 <img
                   src="/icons/star-white.svg"
                   alt="Star White"
-                  className="absolute animate-ping w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[-20px] left-[70px] lg:left-[50px] lg:top-[-120px] pointer-events-none"
+                  className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[-20px] left-[70px] lg:left-[50px] lg:top-[-120px] pointer-events-none"
                 />
                 <h1>
                   getlinked Te
@@ -153,6 +153,11 @@ const Hero = () => {
             </header>
             <figure className="relative overflow-y-hidden">
               <img
+                src="/icons/star-grey.svg"
+                alt="Star Grey"
+                className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[0px] right-[90%] pointer-events-none"
+              />
+              <img
                 src="/images/planet.svg"
                 alt="Planet"
                 className="absolute animate-pulse"
@@ -172,30 +177,48 @@ const Hero = () => {
 const BigIdea = () => {
 
     return (
-        <Container className="pt-[62px] pb-[78px]">
-            <div className="grid lg:grid-cols-2 gap-[109px] max-w-max mx-auto">
-                <figure>
-                    <img src="/images/bigidea.svg" alt="Big Idea" />
-                </figure>
-                <div className="flex items-center">
-                    <div className="w-full max-w-[535px] grid place-items-center lg:block text-center lg:text-left">
-                        <header className="text-white text-[32px] font-clashdisplay font-bold">
-                            <h1>Introduction to getlinked</h1>
-                            <h1 className="text-primary">tech Hackathon 1.0</h1>
-                        </header>
-                        <div className="pt-2">
-                            <p className="text-white text-[14px] leading-[27px]">Our tech hackathon is a melting pot of visionaries, and its purpose is as
-                                clear as day: to shape the future. Whether you&rsquo;re a coding genius, a
-                                design maverick, or a concept wizard, you&rsquo;ll have the chance to transform
-                                your ideas into reality. Solving real-world problems, pushing the boundaries
-                                of technology, and creating solutions that can change the world,
-                                that&rsquo;s what we&rsquo;re all about!</p>
-                        </div>
-                    </div>
-                </div>
+      <Container className="pt-[62px] pb-[78px]">
+        <div className="grid lg:grid-cols-2 gap-[109px] max-w-max mx-auto">
+          <figure className="relative">
+            <img
+              src="/icons/arrow.svg"
+              alt="Arrow"
+              className="absolute animate-bounce w-[19px] h-[22px] lg:w-[49px] lg:h-[57px] bottom-[-15px] translate-x-[-50%] right-[50%] lg:right-[0px] lg:bottom-[0px] pointer-events-none"
+            />
+            <img
+              src="/icons/star-dark-purple.svg"
+              alt="Star Purple"
+              className="absolute animate-pulse pointer-events-none w-[8px] h-[10px] lg:w-[21px] lg:h-[25px] left-[-20px] top-[35%] translate-y-[-50%]"
+            />
+            <img src="/images/bigidea.svg" alt="Big Idea" />
+          </figure>
+          <div className="flex items-center">
+            <div className="w-full max-w-[535px] grid place-items-center lg:block text-center lg:text-left">
+              <header className="text-white text-[32px] font-clashdisplay font-bold relative">
+                <h1>Introduction to getlinked</h1>
+                <h1 className="text-primary">tech Hackathon 1.0</h1>
+                <img
+                  src="/icons/star-purple.svg"
+                  alt="Star Purple"
+                  className="absolute animate-pulse pointer-events-none w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] right-0 top-[50%] translate-y-[-50%]"
+                />
+              </header>
+              <div className="pt-2">
+                <p className="text-white text-[14px] leading-[27px]">
+                  Our tech hackathon is a melting pot of visionaries, and its
+                  purpose is as clear as day: to shape the future. Whether
+                  you&rsquo;re a coding genius, a design maverick, or a concept
+                  wizard, you&rsquo;ll have the chance to transform your ideas
+                  into reality. Solving real-world problems, pushing the
+                  boundaries of technology, and creating solutions that can
+                  change the world, that&rsquo;s what we&rsquo;re all about!
+                </p>
+              </div>
             </div>
-        </Container>
-    )
+          </div>
+        </div>
+      </Container>
+    );
 }
 
 const Rules = () => {
