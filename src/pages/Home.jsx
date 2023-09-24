@@ -797,16 +797,16 @@ const Policy = () => {
             </div>
           </section>
           <section>
-            <figure className="grid place-items-center relative h-full">
+            <figure className="grid  place-items-center relative h-full">
               <img
                 src="/images/privacy.svg"
                 alt="Privacy"
-                className="lg:self-end"
+                className="lg:self-end shaking-elementshaking-element"
               />
               <img
                 src="/images/safeguard.svg"
                 alt="Safeguard"
-                className="absolute top-0"
+                className="absolute top-0 shaking-element"
               />
               <img
                 src="/icons/star-white.svg"
