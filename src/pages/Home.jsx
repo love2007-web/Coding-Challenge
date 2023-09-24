@@ -10,6 +10,7 @@ import { faqsData } from "../data/faqs";
 import { TimelineLeft, TimelineMobile, TimelineRight } from "../components/Timeline";
 import { timelineData } from "../data/timeline";
 import Footer from "../layout/Footer";
+import CountDown from "../components/CountDown";
 
 export default function Home() {
 
@@ -124,32 +125,7 @@ const Hero = () => {
               <Link to="/register" className="relative z-2">
                 <Button>Register</Button>
               </Link>
-              <div className="pt-5 text-white flex gap-4 lg:gap-6 relative z-2">
-                <div className="flex">
-                  <h1 className="font-unicaone text-[48px] lg:text-[64px]">
-                    00
-                  </h1>
-                  <span className="text-[14px] font-primary pb-2 lg:pb-4 inline-block self-end mb-2">
-                    H
-                  </span>
-                </div>
-                <div className="flex">
-                  <h1 className="font-unicaone text-[48px] lg:text-[64px]">
-                    00
-                  </h1>
-                  <span className="text-[14px] font-primary pb-2 lg:pb-4 inline-block self-end mb-2">
-                    M
-                  </span>
-                </div>
-                <div className="flex">
-                  <h1 className="font-unicaone text-[48px] lg:text-[64px]">
-                    00
-                  </h1>
-                  <span className="text-[14px] font-primary pb-2 lg:pb-4 inline-block self-end mb-2">
-                    S
-                  </span>
-                </div>
-              </div>
+              <CountDown/>
             </header>
             <figure className="relative overflow-y-hidden">
               <img
