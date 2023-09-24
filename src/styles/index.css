@@ -107,3 +107,16 @@ input[data-autocompleted] {
 .close-btn-gradient{
   background: linear-gradient(180deg, #903AFF 0%, #FF26B9 100%);
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.shaking-element {
+  animation: float 2s ease-in-out infinite; /* Adjust the duration and timing as needed */
+}

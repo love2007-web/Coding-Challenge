@@ -5,158 +5,167 @@ import Container from "../components/Container";
 import Button from "../components/Button";
 import { Link } from "react-router-dom";
 import { attributesData } from "../data/atrributes";
-import { Disclosure, Transition } from '@headlessui/react'
+import { Disclosure, Transition } from "@headlessui/react";
 import { faqsData } from "../data/faqs";
-import { TimelineLeft, TimelineMobile, TimelineRight } from "../components/Timeline";
+import {
+  TimelineLeft,
+  TimelineMobile,
+  TimelineRight,
+} from "../components/Timeline";
 import { timelineData } from "../data/timeline";
 import Footer from "../layout/Footer";
+import ReactTyped from "react-typed";
 import CountDown from "../components/CountDown";
 
 export default function Home() {
-
-    return (
-        <>
-            <SEO
-                title="Home"
-                description="GetLinked Pre Hackathon Project"
-            />
-            <div className="min-h-[100vh] bg-[#150E28] overflow-hidden">
-                <div className="border-b-[1px] border-b-[#FFFFFF2E]">
-                    <Navbar className="pb-5" />
-                </div>
-                <Hero />
-                <BigIdea />
-                <Rules />
-                <Attributes />
-                <Faqs />
-                <Timeline />
-                <Rewards />
-                <Partners />
-                <Policy />
-            </div>
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <SEO title="Home" description="GetLinked Pre Hackathon Project" />
+      <div className="min-h-[100vh] bg-[#150E28] overflow-hidden">
+        <div className="border-b-[1px] border-b-[#FFFFFF2E]">
+          <Navbar className="pb-5" />
+        </div>
+        <Hero />
+        <BigIdea />
+        <Rules />
+        <Attributes />
+        <Faqs />
+        <Timeline />
+        <Rewards />
+        <Partners />
+        <Policy />
+      </div>
+      <Footer />
+    </>
+  );
 }
 
 const Hero = () => {
-
-    return (
-      <>
-        <Container className="!px-4 flex justify-center lg:justify-end relative">
+  return (
+    <>
+      <Container className="!px-4 flex justify-center lg:justify-end relative">
+        <img
+          src="/images/purple-lens-flare-left.svg"
+          alt="purple lens flare"
+          className="hidden animate-pulse lg:block absolute pointer-events-none lg:top-[-300px] lg:left-[-100px] mix-blend-hard-light"
+        />
+        <img
+          src="/images/purple-lens-flare-left.svg"
+          alt="purple lens flare"
+          className="hidden animate-pulse lg:block absolute pointer-events-none top-[-100px] left-[600px] mix-blend-hard-light"
+        />
+        <h1 className="font-bold italic py-6 lg:text-[36px] text-white relative z-2 text-center lg:text-right">
+          <ReactTyped
+            strings={["Igniting a Revolution in HR Innovation"]}
+            typeSpeed={150}
+            loop
+            backSpeed={100}
+          />{" "}
+          <span className="relative">
+            {" "}
+            <img
+              src="/images/curved-line.svg"
+              className="bottom-[-10px] lg:bottom-[-15px] left-[2px] absolute"
+            />
+          </span>
+        </h1>
+      </Container>
+      <div className="border-b-[1px] border-[#ffffff2e]">
+        <Container className="grid lg:grid-cols-2 pt-8 lg:pt-24 !px-0 lg:!pl-12 relative">
           <img
-            src="/images/purple-lens-flare-left.svg"
-            alt="purple lens flare"
-            className="hidden animate-pulse lg:block absolute pointer-events-none lg:top-[-300px] lg:left-[-100px] mix-blend-hard-light"
+            src="/icons/star-grey.svg"
+            alt="Star Grey"
+            className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[228px] lg:top-[66%] right-[15%] lg:left-[30%] pointer-events-none"
           />
           <img
-            src="/images/purple-lens-flare-left.svg"
-            alt="purple lens flare"
-            className="hidden animate-pulse lg:block absolute pointer-events-none top-[-100px] left-[600px] mix-blend-hard-light"
+            src="/icons/star-grey.svg"
+            alt="Star Grey"
+            className="absolute animate-pulse lg:hidden w-[6px] h-[8px] top-[10px] right-[5%] pointer-events-none"
           />
-          <h1 className="font-bold italic py-6 lg:text-[36px] text-white relative z-2 text-center lg:text-right">
-            Igniting a Revolution in{" "}
-            <span className="relative">
-              HR Innovation{" "}
+          <header className="grid place-items-center lg:place-items-start px-[30px] lg:px-0 lg:flex flex-col gap-5 pb-8">
+            <img
+              src="/images/purple-lens-flare-left.svg"
+              alt="purple lens flare"
+              className="w-[616px] animate-pulse h-[563px] lg:hidden absolute pointer-events-none top-[-8%] left-[-8%] mix-blend-hard-light"
+            />
+            <div className="grid place-items-center text-center lg:text-left lg:block font-clashdisplay text-white text-[32px] lg:text-[80px] font-bold lg:leading-[98px] relative z-2">
               <img
-                src="/images/curved-line.svg"
-                className="bottom-[-10px] lg:bottom-[-15px] left-[2px] absolute"
+                src="/icons/star-white.svg"
+                alt="Star White"
+                className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[-20px] left-[70px] lg:left-[50px] lg:top-[-120px] pointer-events-none"
               />
-            </span>
-          </h1>
+              <h1>
+                getlinked Te
+                <span className="inline-block relative">
+                  c{" "}
+                  <img
+                    src="/icons/light-bulb.svg"
+                    alt="light bulb"
+                    className="absolute left-[5px] lg:left-[15px] top-[-10px] lg:top-[-42px] w-[18px] h-[26px] lg:h-[73px] lg:w-[53px]"
+                  />
+                </span>
+                h
+              </h1>
+              <h1>
+                Hackathon&nbsp;
+                <span className="text-primary inline-block relative">
+                  1.0
+                  <img
+                    src="/icons/chain.svg"
+                    alt="chain"
+                    className="inline-block mb-2 lg:mb-0 lg:absolute w-[32px] h-[32px] lg:w-auto lg:h-auto top-[5px] left-[120px]"
+                  />
+                  <img
+                    src="/icons/fire.svg"
+                    alt="chain"
+                    className="inline-block mb-2 lg:mb-0 lg:absolute top-[20px] w-[22px] h-[22px] lg:w-auto lg:h-auto left-[205px]"
+                  />
+                </span>
+              </h1>
+            </div>
+            <p className="text-[13px] lg:text-[20px] lg:mb-5 text-white text-center lg:text-left max-w-[264px] lg:max-w-none relative z-2">
+              Participate in getlinked tech Hackathon 2023 stand a chance to win
+              a Big prize
+            </p>
+            <Link to="/register" className="relative z-2">
+              <Button>Register</Button>
+            </Link>
+            <CountDown />
+          </header>
+          <figure className="relative overflow-y-hidden">
+            <img
+              src="/icons/star-grey.svg"
+              alt="Star Grey"
+              className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[0px] right-[90%] pointer-events-none"
+            />
+            <img
+              src="/images/planet.svg"
+              alt="Planet"
+              className="absolute animate-pulse"
+            />
+            <img
+              src="/images/man-vr.svg"
+              alt="Man - Virtual Reality"
+              className="w-full h-full"
+            />
+          </figure>
         </Container>
-        <div className="border-b-[1px] border-[#ffffff2e]">
-          <Container className="grid lg:grid-cols-2 pt-8 lg:pt-24 !px-0 lg:!pl-12 relative">
-            <img
-              src="/icons/star-grey.svg"
-              alt="Star Grey"
-              className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[228px] lg:top-[66%] right-[15%] lg:left-[30%] pointer-events-none"
-            />
-            <img
-              src="/icons/star-grey.svg"
-              alt="Star Grey"
-              className="absolute animate-pulse lg:hidden w-[6px] h-[8px] top-[10px] right-[5%] pointer-events-none"
-            />
-            <header className="grid place-items-center lg:place-items-start px-[30px] lg:px-0 lg:flex flex-col gap-5 pb-8">
-              <img
-                src="/images/purple-lens-flare-left.svg"
-                alt="purple lens flare"
-                className="w-[616px] animate-pulse h-[563px] lg:hidden absolute pointer-events-none top-[-8%] left-[-8%] mix-blend-hard-light"
-              />
-              <div className="grid place-items-center text-center lg:text-left lg:block font-clashdisplay text-white text-[32px] lg:text-[80px] font-bold lg:leading-[98px] relative z-2">
-                <img
-                  src="/icons/star-white.svg"
-                  alt="Star White"
-                  className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[-20px] left-[70px] lg:left-[50px] lg:top-[-120px] pointer-events-none"
-                />
-                <h1>
-                  getlinked Te
-                  <span className="inline-block relative">
-                    c{" "}
-                    <img
-                      src="/icons/light-bulb.svg"
-                      alt="light bulb"
-                      className="absolute left-[5px] lg:left-[15px] top-[-10px] lg:top-[-42px] w-[18px] h-[26px] lg:h-[73px] lg:w-[53px]"
-                    />
-                  </span>
-                  h
-                </h1>
-                <h1>
-                  Hackathon&nbsp;
-                  <span className="text-primary inline-block relative">
-                    1.0
-                    <img
-                      src="/icons/chain.svg"
-                      alt="chain"
-                      className="inline-block mb-2 lg:mb-0 lg:absolute w-[32px] h-[32px] lg:w-auto lg:h-auto top-[5px] left-[120px]"
-                    />
-                    <img
-                      src="/icons/fire.svg"
-                      alt="chain"
-                      className="inline-block mb-2 lg:mb-0 lg:absolute top-[20px] w-[22px] h-[22px] lg:w-auto lg:h-auto left-[205px]"
-                    />
-                  </span>
-                </h1>
-              </div>
-              <p className="text-[13px] lg:text-[20px] lg:mb-5 text-white text-center lg:text-left max-w-[264px] lg:max-w-none relative z-2">
-                Participate in getlinked tech Hackathon 2023 stand a chance to
-                win a Big prize
-              </p>
-              <Link to="/register" className="relative z-2">
-                <Button>Register</Button>
-              </Link>
-              <CountDown/>
-            </header>
-            <figure className="relative overflow-y-hidden">
-              <img
-                src="/icons/star-grey.svg"
-                alt="Star Grey"
-                className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[0px] right-[90%] pointer-events-none"
-              />
-              <img
-                src="/images/planet.svg"
-                alt="Planet"
-                className="absolute animate-pulse"
-              />
-              <img
-                src="/images/man-vr.svg"
-                alt="Man - Virtual Reality"
-                className="w-full h-full"
-              />
-            </figure>
-          </Container>
-        </div>
-      </>
-    );
-}
+      </div>
+    </>
+  );
+};
 
 const BigIdea = () => {
   return (
-    <div className="border-b-[1px] border-[#ffffff2e]">
+    <div className="border-b-[1px] border-[#ffffff2e]" id="overview">
       <Container className="pt-[62px] pb-[78px]">
         <div className="grid lg:grid-cols-2 gap-[109px] max-w-max mx-auto">
           <figure className="relative">
-            <img src="/images/bigidea.svg" alt="Big Idea" />
+            <img
+              src="/images/bigidea.svg"
+              alt="Big Idea"
+              className="shaking-element"
+            />
             <img
               src="/icons/arrow.svg"
               alt="Arrow"
@@ -222,7 +231,7 @@ const Rules = () => {
             <img
               src="/images/rules.svg"
               alt="Rules and Guidelines"
-              className="relative z-2"
+              className="relative z-2 shaking-element"
             />
           </figure>
           <div className="flex items-center lg:row-start-1 py-[78px]">
@@ -274,7 +283,7 @@ const Attributes = () => {
             <img
               src="/images/attributes.svg"
               alt="Judging Criteria Key attributes"
-              className="relative z-2"
+              className="relative z-2 shaking-element"
             />
             <img
               src="/images/purple-lens-flare-left.svg"
@@ -317,7 +326,7 @@ const Attributes = () => {
 
 const Faqs = () => {
   return (
-    <div className="border-b-[1px] border-[#ffffff2e]">
+    <div className="border-b-[1px] border-[#ffffff2e]" id="faqs">
       <Container>
         <div className="flex gap-[24px] pb-14 flex-col lg:flex-row">
           <div className="w-full lg:max-w-[427px] pt-24">
@@ -374,7 +383,7 @@ const Faqs = () => {
             </div>
           </div>
           <figure className="flex-1 pt-[160px] relative grid place-items-center">
-            <div className="absolute flex gap-12 min-[400px]:gap-20 lg:gap-28 left-0 min-[365px]:left-[10%] min-[600px]:left-[20%] top-[10px]">
+            <div className="absolute flex shaking-element gap-12 min-[400px]:gap-20 lg:gap-28 left-0 min-[365px]:left-[10%] min-[600px]:left-[20%] top-[10px]">
               <img
                 src="/icons/question.svg"
                 alt="Question mark"
@@ -391,7 +400,11 @@ const Faqs = () => {
                 className="mt-[100px] w-[30px] lg:w-auto"
               />
             </div>
-            <img src="/images/faqs.svg" alt="Faqs" />
+            <img
+              src="/images/faqs.svg"
+              alt="Faqs"
+              className="shaking-element"
+            />
             <img
               src="/icons/star-white.svg"
               alt="Star White"
@@ -419,416 +432,411 @@ const Faqs = () => {
   );
 };
 const Timeline = () => {
-
-    return (
-      <div className="border-b-[1px] border-[#ffffff2e]">
-        <Container className="py-20 relative">
-          <img
-            src="/icons/star-purple.svg"
-            alt="Star Purple"
-            className="absolute top-[250px] left-[30%] w-[14px] h-[16px] lg:w-[30px] lg:h-[36px]"
-          />
-          <img
-            src="/icons/star-white.svg"
-            alt="Star White"
-            className="absolute top-[50%] right-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
-          />
-          <img
-            src="/icons/star-grey.svg"
-            alt="Star Grey"
-            className="absolute bottom-[40px] lg:bottom-[110px] left-[20px] lg:left-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
-          />
-          <header className="w-full max-w-[346px] mx-auto text-center text-white mb-20">
-            <h1 className="text-[32px] font-clashdisplay font-bold mb-2">
-              Timeline
-            </h1>
-            <p className="text-[14px]">
-              Here is the breakdown of the time we anticipate using for the
-              upcoming event.
-            </p>
-          </header>
-          <section className="hidden sm:block">
-            {timelineData.map((tld) =>
-              tld.direction === "left" ? (
-                <TimelineLeft
-                  key={tld.id}
-                  title={tld.title}
-                  content={tld.content}
-                  date={tld.date}
-                  index={tld.index}
-                  start={tld?.start}
-                  end={tld?.end}
-                />
-              ) : (
-                <TimelineRight
-                  key={tld.id}
-                  title={tld.title}
-                  content={tld.content}
-                  date={tld.date}
-                  index={tld.index}
-                  start={tld?.start}
-                  end={tld?.end}
-                />
-              )
-            )}
-          </section>
-          <section className="block sm:hidden">
-            {timelineData.map((tld) => (
-              <TimelineMobile
+  return (
+    <div className="border-b-[1px] border-[#ffffff2e]" id="timeline">
+      <Container className="py-20 relative">
+        <img
+          src="/icons/star-purple.svg"
+          alt="Star Purple"
+          className="absolute top-[250px] left-[30%] w-[14px] h-[16px] lg:w-[30px] lg:h-[36px]"
+        />
+        <img
+          src="/icons/star-white.svg"
+          alt="Star White"
+          className="absolute top-[50%] right-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
+        />
+        <img
+          src="/icons/star-grey.svg"
+          alt="Star Grey"
+          className="absolute bottom-[40px] lg:bottom-[110px] left-[20px] lg:left-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
+        />
+        <header className="w-full max-w-[346px] mx-auto text-center text-white mb-20">
+          <h1 className="text-[32px] font-clashdisplay font-bold mb-2">
+            Timeline
+          </h1>
+          <p className="text-[14px]">
+            Here is the breakdown of the time we anticipate using for the
+            upcoming event.
+          </p>
+        </header>
+        <section className="hidden sm:block">
+          {timelineData.map((tld) =>
+            tld.direction === "left" ? (
+              <TimelineLeft
                 key={tld.id}
                 title={tld.title}
                 content={tld.content}
                 date={tld.date}
                 index={tld.index}
+                start={tld?.start}
+                end={tld?.end}
               />
-            ))}
-          </section>
-        </Container>
-      </div>
-    );
-}
+            ) : (
+              <TimelineRight
+                key={tld.id}
+                title={tld.title}
+                content={tld.content}
+                date={tld.date}
+                index={tld.index}
+                start={tld?.start}
+                end={tld?.end}
+              />
+            )
+          )}
+        </section>
+        <section className="block sm:hidden">
+          {timelineData.map((tld) => (
+            <TimelineMobile
+              key={tld.id}
+              title={tld.title}
+              content={tld.content}
+              date={tld.date}
+              index={tld.index}
+            />
+          ))}
+        </section>
+      </Container>
+    </div>
+  );
+};
 
 const Rewards = () => {
-
-    return (
-      <div className="bg-[#110b20] py-[74px]">
-        <Container className="relative !px-[10px] min-[320px]:!px-[30px]">
-          <img
-            src="/icons/star-purple.svg"
-            alt="Star Purple"
-            className="w-[7px] h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[20px] left-[5%] lg:left-[20%]"
-          />
-          <img
-            src="/icons/star-purple.svg"
-            alt="Star Purple"
-            className="w-[7px] h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[80px] right-[5%] lg:right-[20%]"
-          />
-          <img
-            src="/icons/star-white.svg"
-            alt="Star White"
-            className="w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] absolute top-[80%] lg:top-[50%] right-[3%] lg:right-[1%]"
-          />
-          <img
-            src="/images/purple-lens-flare-left.svg"
-            alt="purple lens flare"
-            className="absolute pointer-events-none left-[-40px] sm:left-[-100px] sm:top-[-100px] mix-blend-hard-light"
-          />
-          <img
-            src="/images/purple-lens-flare-right.svg"
-            alt="purple lens flare"
-            className="absolute pointer-events-none bottom-[-50px] min-[425px]:bottom-[-200px] right-[-200px] min-[425px]:right-[-300px] lg:right-[-600px] lg:bottom-[-400px] mix-blend-hard-light"
-          />
-          <header className="text-white relative grid lg:hidden text-center">
-            <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
-              Prizes and{" "}
-            </h1>
-            <h1 className="text-primary relative z-2 text-[32px] font-clashdisplay font-bold">
-              Rewards
-            </h1>
-            <p className="pt-2">
-              Highlight of the prizes or rewards for winners and for
-              participants.
-            </p>
-          </header>
-          <div className="flex flex-col lg:flex-row gap-[37px] relative">
-            <figure className="pt-20 lg:pt-36 grid place-items-center relative z-2">
-              <img src="/images/trophy.svg" alt="Trophy" />
-              <img
-                src="/icons/star-white.svg"
-                alt="Star White"
-                className="w-[10px] h-[12px] lg:w-[15px] lg:h-[16px] absolute bottom-[0px] left-[20%] lg:left-[50%] translate-x-[-50%]"
-              />
-            </figure>
-            <div className="flex-1">
-              <header className="text-white relative hidden lg:block pl-14 pb-14 text-left">
-                <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
-                  Prizes and{" "}
-                </h1>
-                <h1 className="text-primary relative z-2 text-[32px] font-clashdisplay font-bold">
-                  Rewards
-                </h1>
-                <p className="pt-2">
-                  Highlight of the prizes or rewards for winners and for
-                  participants.
-                </p>
-              </header>
-              <section className="pt-20 lg:pt-56 flex gap-2 max-w-max lg:max-w-full w-full mx-auto lg:mx-auto-0">
-                <div className="flex flex-1  px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] pb-[22px] lg:h-[296px] relative">
-                  <img
-                    src="/images/silver-medal.svg"
-                    alt="Silver medal"
-                    className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
-                  />
-                  <div className="text-center text-white self-end w-full">
-                    <h3 className="font-bold text-[12px] lg:text-[32px]">
-                      2nd
-                    </h3>
-                    <h2 className="font-semibold text-[12px] lg:text-[24px]">
-                      Runner
-                    </h2>
-                    <h1 className="text-[14px] text-primary font-bold lg:pt-2">
-                      N300,000
-                    </h1>
-                  </div>
-                </div>
-                <div className="relative grid place-items-center w-[125px] lg:w-[296px]">
-                  <img
-                    src="/images/gold-medal.svg"
-                    alt="Gold medal"
-                    className="absolute top-[-60px] lg:top-[-40%] left-[50%] translate-x-[-50%] block"
-                  />
-                  <div className="flex px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[147px] lg:h-[347px] pb-[22px]">
-                    <div className="text-center text-white self-end w-full">
-                      <h3 className="font-bold text-[12px] lg:text-[32px]">
-                        1st
-                      </h3>
-                      <h2 className="font-semibold text-[12px] lg:text-[24px]">
-                        Runner
-                      </h2>
-                      <h1 className="text-[14px] text-primary font-bold lg:pt-2">
-                        N400,000
-                      </h1>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex flex-1 px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] lg:h-[296px] pb-[22px] relative">
-                  <img
-                    src="/images/bronze-medal.svg"
-                    alt="Bronze medal"
-                    className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
-                  />
-                  <div className="text-center text-white self-end w-full">
-                    <h3 className="font-bold text-[12px] lg:text-[32px]">
-                      3rd
-                    </h3>
-                    <h2 className="font-semibold text-[12px] lg:text-[24px]">
-                      Runner
-                    </h2>
-                    <h1 className="text-[14px] text-primary font-bold lg:pt-2">
-                      N150,000
-                    </h1>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </Container>
-      </div>
-    );
-}
-
-const Partners = () => {
-
-    return (
-      <div className="bg-[#110b20] py-[74px] border-b-[1px] border-b-[#FFFFFF2E]">
-        <Container className="py-20 relative">
-          <img
-            src="/images/purple-lens-flare-left.svg"
-            alt="purple lens flare"
-            className="absolute pointer-events-none mix-blend-hard-light top-[-10%] left-[-40%] md:top-[-300px] md:left-[-400px]"
-          />
-          <img
-            src="/images/purple-lens-flare-right.svg"
-            alt="purple lens flare"
-            className="absolute pointer-events-none mix-blend-hard-light bottom-[-20%] right-[-50%] min-[480px]:bottom-[-400px] lg:right-[-600px]"
-          />
-          <header className="text-white relative text-center mb-14">
-            <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
-              Partners and Sponsors{" "}
-            </h1>
-            <p className="pt-2 text-[14px] mx-auto w-full max-w-[452px] ">
-              Getlinked Hackathon 1.0 is honored to have the following major
-              companies as its partners and sponsors
-            </p>
-          </header>
-          <div className="w-full max-w-[1255px] mx-auto py-20 lg:py-32 rounded-[2px] lg:rounded-[2px] border-[1px] border-primary relative">
+  return (
+    <div className="bg-[#110b20] py-[74px]">
+      <Container className="relative !px-[10px] min-[320px]:!px-[30px]">
+        <img
+          src="/icons/star-purple.svg"
+          alt="Star Purple"
+          className="w-[7px] h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[20px] left-[5%] lg:left-[20%]"
+        />
+        <img
+          src="/icons/star-purple.svg"
+          alt="Star Purple"
+          className="w-[7px] h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[80px] right-[5%] lg:right-[20%]"
+        />
+        <img
+          src="/icons/star-white.svg"
+          alt="Star White"
+          className="w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] absolute top-[80%] lg:top-[50%] right-[3%] lg:right-[1%]"
+        />
+        <img
+          src="/images/purple-lens-flare-left.svg"
+          alt="purple lens flare"
+          className="absolute pointer-events-none left-[-40px] sm:left-[-100px] sm:top-[-100px] mix-blend-hard-light"
+        />
+        <img
+          src="/images/purple-lens-flare-right.svg"
+          alt="purple lens flare"
+          className="absolute pointer-events-none bottom-[-50px] min-[425px]:bottom-[-200px] right-[-200px] min-[425px]:right-[-300px] lg:right-[-600px] lg:bottom-[-400px] mix-blend-hard-light"
+        />
+        <header className="text-white relative grid lg:hidden text-center">
+          <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
+            Prizes and{" "}
+          </h1>
+          <h1 className="text-primary relative z-2 text-[32px] font-clashdisplay font-bold">
+            Rewards
+          </h1>
+          <p className="pt-2">
+            Highlight of the prizes or rewards for winners and for participants.
+          </p>
+        </header>
+        <div className="flex flex-col lg:flex-row gap-[37px] relative">
+          <figure className="pt-20 lg:pt-36 grid place-items-center relative z-2">
             <img
-              src="/icons/star-purple.svg"
-              alt="Star Purple"
-              className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] top-[4%] lg:top-[-40px] left-[4%] lg:left-[40px] absolute"
+              src="/images/trophy.svg"
+              alt="Trophy"
+              className="shaking-element"
             />
             <img
               src="/icons/star-white.svg"
               alt="Star White"
-              className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] bottom-[5%] lg:bottom-[35px] right-[20%] lg:right-[40%] absolute"
+              className="w-[10px] h-[12px] lg:w-[15px] lg:h-[16px] absolute bottom-[0px] left-[20%] lg:left-[50%] translate-x-[-50%]"
             />
-            <img
-              src="/icons/star-dark-purple.svg"
-              alt="Star Dark Purple"
-              className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] top-[100px] lg:top-[75px] right-[40%] absolute"
-            />
-            <div className="w-full max-w-[240px] lg:max-w-[898px] mx-auto grid grid-cols-3 relative z-10">
-              <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:right-[-12.25px] lg:before:bottom-[-25px] lg:before:right-[-25px] before:bg-[#110b20]">
+          </figure>
+          <div className="flex-1">
+            <header className="text-white relative hidden lg:block pl-14 pb-14 text-left">
+              <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
+                Prizes and{" "}
+              </h1>
+              <h1 className="text-primary relative z-2 text-[32px] font-clashdisplay font-bold">
+                Rewards
+              </h1>
+              <p className="pt-2">
+                Highlight of the prizes or rewards for winners and for
+                participants.
+              </p>
+            </header>
+            <section className="pt-20 lg:pt-56 flex gap-2 max-w-max lg:max-w-full w-full mx-auto lg:mx-auto-0">
+              <div className="flex flex-1  px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] pb-[22px] lg:h-[296px] relative">
                 <img
-                  src="/images/liberty.svg"
-                  alt="Liberty"
-                  className="w-[30px] h-[30px] lg:w-auto lg:h-auto"
+                  src="/images/silver-medal.svg"
+                  alt="Silver medal"
+                  className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
                 />
-              </div>
-              <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary border-l-[2px] lg:border-l-[4px] border-primary border-r-[2px] lg:border-r-[4px]">
-                <img
-                  src="/images/libertypay.svg"
-                  alt="Liberty"
-                  className="w-[56px] lg:w-auto lg:h-auto"
-                />
-              </div>
-              <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:left-[-12.25px] lg:before:bottom-[-25px] lg:before:left-[-25px] before:bg-[#110b20]">
-                <img
-                  src="/images/winwise.svg"
-                  alt="Winwise"
-                  className="w-[34px] h-[30px] lg:w-auto lg:h-auto"
-                />
-              </div>
-              <div className="p-5 grid place-items-center">
-                <img
-                  src="/images/wisper.svg"
-                  alt="Wisper"
-                  className="w-[39px] lg:w-auto lg:h-auto"
-                />
-              </div>
-              <div className="p-5 grid place-items-center border-l-[2px] lg:border-l-[4px] border-r-[2px] lg:border-r-[4px] border-primary">
-                <img
-                  src="/images/paybox.svg"
-                  alt="Paybox"
-                  className="w-[54px] h-[30px] lg:w-auto lg:h-auto"
-                />
-              </div>
-              <div className="p-5 grid place-items-center">
-                <img
-                  src="/images/vizual-plus.svg"
-                  alt="Vizual Plus"
-                  className="w-[69px] h-[30px] lg:w-auto lg:h-auto"
-                />
-              </div>
-            </div>
-          </div>
-        </Container>
-      </div>
-    );
-}
-
-const Policy = () => {
-
-    return(
-      <div className="bg-[#150e28] py-[74px]">
-        <Container className="py-20 relative">
-          <img
-            src="/images/purple-lens-flare-left.svg"
-            alt="purple lens flare"
-            className="absolute pointer-events-none mix-blend-hard-light top-[600px] min-[425px]:top-[500px] lg:top-0 lg:bottom-[-400px] left-[-20%]"
-          />
-          <div className="grid lg:grid-cols-2 gap-[50px]">
-            <section>
-              <header className="text-white relative mb-14">
-                <img
-                  src="/icons/star-grey.svg"
-                  alt="Star Grey"
-                  className="absolute w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[38%] top-[-5px]"
-                />
-                <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
-                  Privacy Policy and{" "}
-                </h1>
-                <h1 className="relative z-2 text-[32px] text-primary font-clashdisplay font-bold">
-                  Terms{" "}
-                </h1>
-                <p className="pt-4 text-[14px] text-[#FFFFFFBF]">
-                  Last updated on September 12, 2023{" "}
-                </p>
-                <p className="pt-8 text-[14px]">
-                  Below are our privacy & policy, which outline a lot of
-                  goodies. it&rsquo;s our aim to always take of our participant
-                </p>
-              </header>
-              <div className="relative border-[1px] border-primary w-full max-w-[569px] mx-auto py-[59px] rounded-[5px]">
-                <img
-                  src="/icons/star-purple.svg"
-                  alt="Star Grey"
-                  className="absolute w-[17px] h-[20px] lg:w-[30px] lg:h-[36px] left-[-50px] bottom-[40%]"
-                />
-                <p className="text-white text-[14px] px-[15px] lg:px-[72px] leading-[30px] pb-[24px]">
-                  At getlinked tech Hackathon 1.0, we value your privacy and are
-                  committed to protecting your personal information. This
-                  Privacy Policy outlines how we collect, use, disclose, and
-                  safeguard your data when you participate in our tech hackathon
-                  event. By participating in our event, you consent to the
-                  practices described in this policy.
-                </p>
-                <div className="pl-[22px] lg:pl-[72px] pr-[22px] lg:pr-[39px] relative z-2">
-                  <h1 className="relative z-2 text-primary font-clashdisplay font-bold">
-                    Licensing Policy{" "}
+                <div className="text-center text-white self-end w-full">
+                  <h3 className="font-bold text-[12px] lg:text-[32px]">2nd</h3>
+                  <h2 className="font-semibold text-[12px] lg:text-[24px]">
+                    Runner
+                  </h2>
+                  <h1 className="text-[14px] text-primary font-bold lg:pt-2">
+                    N300,000
                   </h1>
-                  <p className="text-white font-bold leading-[30px]">
-                    Here are terms of our Standard License:
-                  </p>
-                  <ul className="flex flex-col gap-4 pt-5 pb-6">
-                    <li className="flex gap-4">
-                      <img
-                        src="/icons/checked.svg"
-                        alt="Checked"
-                        className="w-[17px] h-[17px] mt-2"
-                      />
-                      <p className="text-white text-[14px] leading-[30px]">
-                        The Standard License grants you a non-exclusive right to
-                        navigate and register for our event
-                      </p>
-                    </li>
-                    <li className="flex gap-4">
-                      <img
-                        src="/icons/checked.svg"
-                        alt="Checked"
-                        className="w-[17px] h-[17px] mt-2"
-                      />
-                      <p className="text-white text-[14px] leading-[30px]">
-                        You are licensed to use the item available at any free
-                        source sites, for your project developement
-                      </p>
-                    </li>
-                  </ul>
-                  <Button className="mx-auto">Read More</Button>
+                </div>
+              </div>
+              <div className="relative grid place-items-center w-[125px] lg:w-[296px]">
+                <img
+                  src="/images/gold-medal.svg"
+                  alt="Gold medal"
+                  className="absolute top-[-60px] lg:top-[-40%] left-[50%] translate-x-[-50%] block"
+                />
+                <div className="flex px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[147px] lg:h-[347px] pb-[22px]">
+                  <div className="text-center text-white self-end w-full">
+                    <h3 className="font-bold text-[12px] lg:text-[32px]">
+                      1st
+                    </h3>
+                    <h2 className="font-semibold text-[12px] lg:text-[24px]">
+                      Runner
+                    </h2>
+                    <h1 className="text-[14px] text-primary font-bold lg:pt-2">
+                      N400,000
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-1 px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] lg:h-[296px] pb-[22px] relative">
+                <img
+                  src="/images/bronze-medal.svg"
+                  alt="Bronze medal"
+                  className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
+                />
+                <div className="text-center text-white self-end w-full">
+                  <h3 className="font-bold text-[12px] lg:text-[32px]">3rd</h3>
+                  <h2 className="font-semibold text-[12px] lg:text-[24px]">
+                    Runner
+                  </h2>
+                  <h1 className="text-[14px] text-primary font-bold lg:pt-2">
+                    N150,000
+                  </h1>
                 </div>
               </div>
             </section>
-            <section>
-              <figure className="grid place-items-center relative h-full">
-                <img
-                  src="/images/privacy.svg"
-                  alt="Privacy"
-                  className="lg:self-end"
-                />
-                <img
-                  src="/images/safeguard.svg"
-                  alt="Safeguard"
-                  className="absolute top-0"
-                />
-                <img
-                  src="/icons/star-white.svg"
-                  alt="Star White"
-                  className="absolute w-[9px] h-[10px] lg:w-[15px] lg:h-[18px] left-[25%] bottom-[20%]"
-                />
-                <img
-                  src="/icons/star-grey.svg"
-                  alt="Star Grey"
-                  className="absolute w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[2%] bottom-[15%]"
-                />
-                <img
-                  src="/icons/star-dark-purple.svg"
-                  alt="Star Dark Purple"
-                  className="absolute w-[15px] h-[18px] left-[30%] bottom-[30%]"
-                />
-                <img
-                  src="/icons/star-white.svg"
-                  alt="Star White"
-                  className="absolute w-[7px] h-[8px] lg:w-[15px] lg:h-[18px] right-[22%] top-[20%]"
-                />
-                <img
-                  src="/icons/star-purple.svg"
-                  alt="Star Purple"
-                  className="absolute w-[17px] h-[20px] lg:w-[23px] lg:h-[28px] left-0 lg:left-[-5%] top-[20%]"
-                />
-              </figure>
-            </section>
           </div>
-        </Container>
-      </div>
-    );
-}
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+const Partners = () => {
+  return (
+    <div className="bg-[#110b20] py-[74px] border-b-[1px] border-b-[#FFFFFF2E]">
+      <Container className="py-20 relative">
+        <img
+          src="/images/purple-lens-flare-left.svg"
+          alt="purple lens flare"
+          className="absolute pointer-events-none mix-blend-hard-light top-[-10%] left-[-40%] md:top-[-300px] md:left-[-400px]"
+        />
+        <img
+          src="/images/purple-lens-flare-right.svg"
+          alt="purple lens flare"
+          className="absolute pointer-events-none mix-blend-hard-light bottom-[-20%] right-[-50%] min-[480px]:bottom-[-400px] lg:right-[-600px]"
+        />
+        <header className="text-white relative text-center mb-14">
+          <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
+            Partners and Sponsors{" "}
+          </h1>
+          <p className="pt-2 text-[14px] mx-auto w-full max-w-[452px] ">
+            Getlinked Hackathon 1.0 is honored to have the following major
+            companies as its partners and sponsors
+          </p>
+        </header>
+        <div className="w-full max-w-[1255px] mx-auto py-20 lg:py-32 rounded-[2px] lg:rounded-[2px] border-[1px] border-primary relative">
+          <img
+            src="/icons/star-purple.svg"
+            alt="Star Purple"
+            className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] top-[4%] lg:top-[-40px] left-[4%] lg:left-[40px] absolute"
+          />
+          <img
+            src="/icons/star-white.svg"
+            alt="Star White"
+            className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] bottom-[5%] lg:bottom-[35px] right-[20%] lg:right-[40%] absolute"
+          />
+          <img
+            src="/icons/star-dark-purple.svg"
+            alt="Star Dark Purple"
+            className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] top-[100px] lg:top-[75px] right-[40%] absolute"
+          />
+          <div className="w-full max-w-[240px] lg:max-w-[898px] mx-auto grid grid-cols-3 relative z-10">
+            <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:right-[-12.25px] lg:before:bottom-[-25px] lg:before:right-[-25px] before:bg-[#110b20]">
+              <img
+                src="/images/liberty.svg"
+                alt="Liberty"
+                className="w-[30px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+              />
+            </div>
+            <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary border-l-[2px] lg:border-l-[4px] border-primary border-r-[2px] lg:border-r-[4px]">
+              <img
+                src="/images/libertypay.svg"
+                alt="Liberty"
+                className="w-[56px] shaking-element lg:w-auto lg:h-auto"
+              />
+            </div>
+            <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:left-[-12.25px] lg:before:bottom-[-25px] lg:before:left-[-25px] before:bg-[#110b20]">
+              <img
+                src="/images/winwise.svg"
+                alt="Winwise"
+                className="w-[34px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+              />
+            </div>
+            <div className="p-5 grid place-items-center">
+              <img
+                src="/images/wisper.svg"
+                alt="Wisper"
+                className="w-[39px] shaking-element lg:w-auto lg:h-auto"
+              />
+            </div>
+            <div className="p-5 grid place-items-center border-l-[2px] lg:border-l-[4px] border-r-[2px] lg:border-r-[4px] border-primary">
+              <img
+                src="/images/paybox.svg"
+                alt="Paybox"
+                className="w-[54px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+              />
+            </div>
+            <div className="p-5 grid place-items-center">
+              <img
+                src="/images/vizual-plus.svg"
+                alt="Vizual Plus"
+                className="w-[69px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+const Policy = () => {
+  return (
+    <div className="bg-[#150e28] py-[74px]">
+      <Container className="py-20 relative">
+        <img
+          src="/images/purple-lens-flare-left.svg"
+          alt="purple lens flare"
+          className="absolute pointer-events-none mix-blend-hard-light top-[600px] min-[425px]:top-[500px] lg:top-0 lg:bottom-[-400px] left-[-20%]"
+        />
+        <div className="grid lg:grid-cols-2 gap-[50px]">
+          <section>
+            <header className="text-white relative mb-14">
+              <img
+                src="/icons/star-grey.svg"
+                alt="Star Grey"
+                className="absolute w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[38%] top-[-5px]"
+              />
+              <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
+                Privacy Policy and{" "}
+              </h1>
+              <h1 className="relative z-2 text-[32px] text-primary font-clashdisplay font-bold">
+                Terms{" "}
+              </h1>
+              <p className="pt-4 text-[14px] text-[#FFFFFFBF]">
+                Last updated on September 12, 2023{" "}
+              </p>
+              <p className="pt-8 text-[14px]">
+                Below are our privacy & policy, which outline a lot of goodies.
+                it&rsquo;s our aim to always take of our participant
+              </p>
+            </header>
+            <div className="relative border-[1px] border-primary w-full max-w-[569px] mx-auto py-[59px] rounded-[5px]">
+              <img
+                src="/icons/star-purple.svg"
+                alt="Star Grey"
+                className="absolute w-[17px] h-[20px] lg:w-[30px] lg:h-[36px] left-[-50px] bottom-[40%]"
+              />
+              <p className="text-white text-[14px] px-[15px] lg:px-[72px] leading-[30px] pb-[24px]">
+                At getlinked tech Hackathon 1.0, we value your privacy and are
+                committed to protecting your personal information. This Privacy
+                Policy outlines how we collect, use, disclose, and safeguard
+                your data when you participate in our tech hackathon event. By
+                participating in our event, you consent to the practices
+                described in this policy.
+              </p>
+              <div className="pl-[22px] lg:pl-[72px] pr-[22px] lg:pr-[39px] relative z-2">
+                <h1 className="relative z-2 text-primary font-clashdisplay font-bold">
+                  Licensing Policy{" "}
+                </h1>
+                <p className="text-white font-bold leading-[30px]">
+                  Here are terms of our Standard License:
+                </p>
+                <ul className="flex flex-col gap-4 pt-5 pb-6">
+                  <li className="flex gap-4">
+                    <img
+                      src="/icons/checked.svg"
+                      alt="Checked"
+                      className="w-[17px] h-[17px] mt-2"
+                    />
+                    <p className="text-white text-[14px] leading-[30px]">
+                      The Standard License grants you a non-exclusive right to
+                      navigate and register for our event
+                    </p>
+                  </li>
+                  <li className="flex gap-4">
+                    <img
+                      src="/icons/checked.svg"
+                      alt="Checked"
+                      className="w-[17px] h-[17px] mt-2"
+                    />
+                    <p className="text-white text-[14px] leading-[30px]">
+                      You are licensed to use the item available at any free
+                      source sites, for your project developement
+                    </p>
+                  </li>
+                </ul>
+                <Button className="mx-auto">Read More</Button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <figure className="grid place-items-center relative h-full">
+              <img
+                src="/images/privacy.svg"
+                alt="Privacy"
+                className="lg:self-end"
+              />
+              <img
+                src="/images/safeguard.svg"
+                alt="Safeguard"
+                className="absolute top-0"
+              />
+              <img
+                src="/icons/star-white.svg"
+                alt="Star White"
+                className="absolute w-[9px] h-[10px] lg:w-[15px] lg:h-[18px] left-[25%] bottom-[20%]"
+              />
+              <img
+                src="/icons/star-grey.svg"
+                alt="Star Grey"
+                className="absolute w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[2%] bottom-[15%]"
+              />
+              <img
+                src="/icons/star-dark-purple.svg"
+                alt="Star Dark Purple"
+                className="absolute w-[15px] h-[18px] left-[30%] bottom-[30%]"
+              />
+              <img
+                src="/icons/star-white.svg"
+                alt="Star White"
+                className="absolute w-[7px] h-[8px] lg:w-[15px] lg:h-[18px] right-[22%] top-[20%]"
+              />
+              <img
+                src="/icons/star-purple.svg"
+                alt="Star Purple"
+                className="absolute w-[17px] h-[20px] lg:w-[23px] lg:h-[28px] left-0 lg:left-[-5%] top-[20%]"
+              />
+            </figure>
+          </section>
+        </div>
+      </Container>
+    </div>
+  );
+};
