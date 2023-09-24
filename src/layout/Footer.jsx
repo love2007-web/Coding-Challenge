@@ -4,56 +4,98 @@ import { socialLinks } from "../data/links"
 export default function Footer() {
 
     return (
-        <footer className="pt-[70px] pb-[40px] bg-[#100B20]">
-            <Container>
-                <div className="w-full max-w-[1086px] mx-auto flex flex-col md:flex-row gap-[40px] justify-between">
-                    <div className="w-full max-w-[412px]">
-                        <Link to="/">
-                            <img src="/getlinked.svg" alt="GetLinked logo" className="w-[72px] h-[18px] lg:w-[171px] lg:h-[44px]" />
-                        </Link>
-                        <p className="text-white pt-2 text-[12px] leading-[20px]">Getlinked Tech Hackathon is a technology innovation program
-                            established by a group of organizations with the aim of showcasing
-                            young and talented individuals in the field of technology</p>
-                        <div className="flex gap-2 text-white text-[12px] pt-16">
-                            <p>Terms of Use</p>
-                            <div className="h-[17px] rounded-[2px] w-[2px] bg-primary"></div>
-                            <p>Privacy Policy</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap justify-between gap-x-2 gap-y-10 w-full max-w-[500px]">
-                        <div className="flex flex-col gap-[22px]">
-                            <h1 className="text-[14px] font-semibold text-primary">Useful Links</h1>
-                            <p className="text-white text-[12px]">Overview</p>
-                            <p className="text-white text-[12px]">Timeline</p>
-                            <p className="text-white text-[12px]">FAQs</p>
-                            <p className="text-white text-[12px]">Register</p>
-                            <p className="text-primary text-[12px] flex gap-2 item items-center">Follow us <div className="flex gap-4 items-center">
-                                {
-                                    socialLinks.map(data => (
-                                        <a key={data.id} href={data.link}>
-                                            {data.icon}
-                                        </a>
-                                    ))
-                                }
-                            </div></p>
-                        </div>
-                        <div className="flex flex-col gap-[22px]">
-                            <h1 className="text-[14px] font-semibold text-primary">Contact Us</h1>
-                            <div className="flex gap-4 text-white items-center text-[12px]">
-                                <img src="/icons/phone.svg" alt="contact" className="w-[12px] h-[12px] self start" />
-                                <a href="tel:+2346707653444">+234 6707653444</a>
-                            </div>
-                            <div className="flex gap-4 text-white text-[12px]">
-                                <img src="/icons/location.svg" alt="contact" className="w-[12px] h-[12px] self start" />
-                                <p className="max-w-[89px] leading-[18px]">27,Alara Street
-                                    Yaba 100012
-                                    Lagos State</p>
-                            </div>
-                        </div>
-                    </div>
+      <footer className="pt-[70px] pb-[40px] bg-[#100B20]">
+        <Container className="relative">
+          <img
+            src="/icons/star-white.svg"
+            alt="Star White"
+            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute top-[10%] lg:top-[15%] left-[5px] lg:left-[20px]"
+          />
+          <img
+            src="/icons/star-white.svg"
+            alt="Star White"
+            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute bottom-[15%] right-[20px]"
+          />
+          <img
+            src="/icons/star-purple.svg"
+            alt="Star Purple"
+            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute bottom-[40px] right-[50%]"
+          />
+          <img
+            src="/icons/star-grey.svg"
+            alt="Star Grey"
+            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute top-[40px] right-[30%]"
+          />
+          <div className="w-full max-w-[1086px] mx-auto flex flex-col md:flex-row gap-[40px] justify-between">
+            <div className="w-full max-w-[412px] relative">
+              <Link to="/">
+                <img
+                  src="/getlinked.svg"
+                  alt="GetLinked logo"
+                  className="w-[72px] h-[18px] lg:w-[171px] lg:h-[44px]"
+                />
+              </Link>
+              <p className="text-white pt-2 text-[12px] leading-[20px]">
+                Getlinked Tech Hackathon is a technology innovation program
+                established by a group of organizations with the aim of
+                showcasing young and talented individuals in the field of
+                technology
+              </p>
+              <div className="flex gap-2 text-white text-[12px] pt-16">
+                <p>Terms of Use</p>
+                <div className="h-[17px] rounded-[2px] w-[2px] bg-primary"></div>
+                <p>Privacy Policy</p>
+              </div>
+            </div>
+            <div className="flex flex-wrap justify-between gap-x-2 gap-y-10 w-full max-w-[500px]">
+              <div className="flex flex-col gap-[15px]">
+                <h1 className="text-[14px] font-semibold text-primary">
+                  Useful Links
+                </h1>
+                <p className="text-white text-[12px]">Overview</p>
+                <p className="text-white text-[12px]">Timeline</p>
+                <p className="text-white text-[12px]">FAQs</p>
+                <p className="text-white text-[12px]">Register</p>
+                <div className="text-primary text-[12px] flex gap-2 item items-center">
+                  Follow us{" "}
+                  <div className="flex gap-4 items-center">
+                    {socialLinks.map((data) => (
+                      <a key={data.id} href={data.link}>
+                        {data.icon}
+                      </a>
+                    ))}
+                  </div>
                 </div>
-                <p className="text-center text-white mt-[70px] text-[12px]">All rights reserved. &copy; getlinked Ltd.</p>
-            </Container>
-        </footer>
-    )
+              </div>
+              <div className="flex flex-col gap-[22px]">
+                <h1 className="text-[14px] font-semibold text-primary">
+                  Contact Us
+                </h1>
+                <div className="flex gap-4 text-white items-center text-[12px]">
+                  <img
+                    src="/icons/phone.svg"
+                    alt="contact"
+                    className="w-[12px] h-[12px] self start"
+                  />
+                  <a href="tel:+2346707653444">+234 6707653444</a>
+                </div>
+                <div className="flex gap-4 text-white text-[12px]">
+                  <img
+                    src="/icons/location.svg"
+                    alt="contact"
+                    className="w-[12px] h-[12px] self start"
+                  />
+                  <p className="max-w-[89px] leading-[18px]">
+                    27,Alara Street Yaba 100012 Lagos State
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p className="text-center text-white mt-[70px] text-[12px]">
+            All rights reserved. &copy; getlinked Ltd.
+          </p>
+        </Container>
+      </footer>
+    );
 }
