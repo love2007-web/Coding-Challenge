@@ -174,7 +174,7 @@ const BigIdea = () => {
             <img
               src="/icons/star-dark-purple.svg"
               alt="Star Purple"
-              className="absolute pointer-events-none w-[8px] h-[10px] lg:w-[21px] lg:h-[25px] left-[-20px] top-[35%] translate-y-[-50%]"
+              className="absolute animate-pulse pointer-events-none w-[8px] h-[10px] lg:w-[21px] lg:h-[25px] left-[-20px] top-[35%] translate-y-[-50%]"
             />
           </figure>
           <div className="flex items-center">
@@ -185,7 +185,7 @@ const BigIdea = () => {
                 <img
                   src="/icons/star-purple.svg"
                   alt="Star Purple"
-                  className="absolute pointer-events-none w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] right-0 top-[50%] translate-y-[-50%]"
+                  className="absolute animate-pulse pointer-events-none w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] right-0 top-[50%] translate-y-[-50%]"
                 />
               </header>
               <div className="pt-2">
@@ -226,7 +226,7 @@ const Rules = () => {
             <img
               src="/icons/star-white.svg"
               alt="Star Purple"
-              className="absolute pointer-events-none w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] left-[10px] top-[50%] lg:top-[80%] lg:left-[-20px] translate-y-[-50%]"
+              className="absolute animate-pulse pointer-events-none w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] left-[10px] top-[50%] lg:top-[80%] lg:left-[-20px] translate-y-[-50%]"
             />
             <img
               src="/images/rules.svg"
@@ -240,7 +240,7 @@ const Rules = () => {
                 <img
                   src="/icons/star-purple.svg"
                   alt="Star Purple"
-                  className="absolute top-[80px] right-[0px] lg:right-0 lg:top-[-15px] lg:left-[280px] w-[12px] h-[14px] lg:w-[26px] lg:h-[32px]pointer-events-none"
+                  className="absolute animate-pulse top-[80px] right-[0px] lg:right-0 lg:top-[-15px] lg:left-[280px] w-[12px] h-[14px] lg:w-[26px] lg:h-[32px]pointer-events-none"
                 />
                 <h1 className="relative z-2">Rules and</h1>
                 <h1 className="text-primary relative z-2">Guidelines</h1>
@@ -273,12 +273,12 @@ const Attributes = () => {
             <img
               src="/icons/star-purple.svg"
               alt="Star Purple"
-              className="absolute w-[13px] h-[17px] top-[-12px] left-[50%] lg:w-[30px] lg:h-[36px] translate-x-[-50%] lg:top-[80px] lg:left-[150px]"
+              className="absolute animate-pulse w-[13px] h-[17px] top-[-12px] left-[50%] lg:w-[30px] lg:h-[36px] translate-x-[-50%] lg:top-[80px] lg:left-[150px]"
             />
             <img
               src="/icons/star-grey.svg"
               alt="Star Grey"
-              className="absolute w-[12px] h-[14px] left-[55%] top-[50%] lg:w-[26px] lg:h-[32px] translate-y-[-50%]"
+              className="absolute animate-pulse w-[12px] h-[14px] left-[55%] top-[50%] lg:w-[26px] lg:h-[32px] translate-y-[-50%]"
             />
             <img
               src="/images/attributes.svg"
@@ -301,7 +301,7 @@ const Attributes = () => {
               <img
                 src="/icons/star-white.svg"
                 alt="Star White"
-                className="absolute w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] right-[5%] bottom-[20px] lg:right-0 lg:bottom-[-5px] lg:left-[-100px]"
+                className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] right-[5%] bottom-[20px] lg:right-0 lg:bottom-[-5px] lg:left-[-100px]"
               />
               <header className="text-white text-[32px] font-clashdisplay font-bold relative ">
                 <h1 className="relative z-2">Judging Criteria</h1>
@@ -334,7 +334,7 @@ const Faqs = () => {
               <img
                 src="/icons/star-purple.svg"
                 alt="Star Purple"
-                className="absolute w-[18px] h-[22px] lg:w-[30px] lg:h-[36px] left-[5px] min-[600px]:left-[70px] top-0 lg:left-[-30px] lg:top-[-50px]"
+                className="absolute animate-pulse w-[18px] h-[22px] lg:w-[30px] lg:h-[36px] left-[5px] min-[600px]:left-[70px] top-0 lg:left-[-30px] lg:top-[-50px]"
               />
               <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
                 Frequently Ask{" "}
@@ -408,22 +408,22 @@ const Faqs = () => {
             <img
               src="/icons/star-white.svg"
               alt="Star White"
-              className="absolute w-[16px] h-[20px] lg:w-[26px] lg:h-[32px] bottom-0 right-[30%]"
+              className="absolute animate-pulse w-[16px] h-[20px] lg:w-[26px] lg:h-[32px] bottom-0 right-[30%]"
             />
             <img
               src="/icons/star-grey.svg"
               alt="Star Grey"
-              className="absolute w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] bottom-[36%] left-[10%]"
+              className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] bottom-[36%] left-[10%]"
             />
             <img
               src="/icons/star-dark-purple.svg"
               alt="Star Dark Purple"
-              className="absolute w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[10%] left-[50%]"
+              className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[10%] left-[50%]"
             />
             <img
               src="/icons/star-dark-purple.svg"
               alt="Star Dark Purple"
-              className="absolute w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[30%] left-[20%]"
+              className="absolute animate-pulse w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] top-[30%] left-[20%]"
             />
           </figure>
         </div>
@@ -438,17 +438,17 @@ const Timeline = () => {
         <img
           src="/icons/star-purple.svg"
           alt="Star Purple"
-          className="absolute top-[250px] left-[30%] w-[14px] h-[16px] lg:w-[30px] lg:h-[36px]"
+          className="absolute animate-pulse top-[250px] left-[30%] w-[14px] h-[16px] lg:w-[30px] lg:h-[36px]"
         />
         <img
           src="/icons/star-white.svg"
           alt="Star White"
-          className="absolute top-[50%] right-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
+          className="absolute animate-pulse top-[50%] right-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
         />
         <img
           src="/icons/star-grey.svg"
           alt="Star Grey"
-          className="absolute bottom-[40px] lg:bottom-[110px] left-[20px] lg:left-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
+          className="absolute animate-pulse bottom-[40px] lg:bottom-[110px] left-[20px] lg:left-[15%] w-[10px] h-[12px] lg:w-[26px] lg:h-[32px]"
         />
         <header className="w-full max-w-[346px] mx-auto text-center text-white mb-20">
           <h1 className="text-[32px] font-clashdisplay font-bold mb-2">
@@ -507,17 +507,17 @@ const Rewards = () => {
         <img
           src="/icons/star-purple.svg"
           alt="Star Purple"
-          className="w-[7px] h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[20px] left-[5%] lg:left-[20%]"
+          className="w-[7px] animate-pulse h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[20px] left-[5%] lg:left-[20%]"
         />
         <img
           src="/icons/star-purple.svg"
           alt="Star Purple"
-          className="w-[7px] h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[80px] right-[5%] lg:right-[20%]"
+          className="w-[7px] animate-pulse h-[9px] lg:w-[21px] lg:h-[25px] absolute top-[80px] right-[5%] lg:right-[20%]"
         />
         <img
           src="/icons/star-white.svg"
           alt="Star White"
-          className="w-[10px] h-[12px] lg:w-[26px] lg:h-[32px] absolute top-[80%] lg:top-[50%] right-[3%] lg:right-[1%]"
+          className="w-[10px] animate-pulse h-[12px] lg:w-[26px] lg:h-[32px] absolute top-[80%] lg:top-[50%] right-[3%] lg:right-[1%]"
         />
         <img
           src="/images/purple-lens-flare-left.svg"
@@ -550,7 +550,7 @@ const Rewards = () => {
             <img
               src="/icons/star-white.svg"
               alt="Star White"
-              className="w-[10px] h-[12px] lg:w-[15px] lg:h-[16px] absolute bottom-[0px] left-[20%] lg:left-[50%] translate-x-[-50%]"
+              className="w-[10px] animate-pulse h-[12px] lg:w-[15px] lg:h-[16px] absolute bottom-[0px] left-[20%] lg:left-[50%] translate-x-[-50%]"
             />
           </figure>
           <div className="flex-1">
@@ -654,17 +654,17 @@ const Partners = () => {
           <img
             src="/icons/star-purple.svg"
             alt="Star Purple"
-            className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] top-[4%] lg:top-[-40px] left-[4%] lg:left-[40px] absolute"
+            className="w-[8px] animate-pulse h-[10px] lg:w-[30px] lg:h-[36px] top-[4%] lg:top-[-40px] left-[4%] lg:left-[40px] absolute"
           />
           <img
             src="/icons/star-white.svg"
             alt="Star White"
-            className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] bottom-[5%] lg:bottom-[35px] right-[20%] lg:right-[40%] absolute"
+            className="w-[8px] animate-pulse h-[10px] lg:w-[30px] lg:h-[36px] bottom-[5%] lg:bottom-[35px] right-[20%] lg:right-[40%] absolute"
           />
           <img
             src="/icons/star-dark-purple.svg"
             alt="Star Dark Purple"
-            className="w-[8px] h-[10px] lg:w-[30px] lg:h-[36px] top-[100px] lg:top-[75px] right-[40%] absolute"
+            className="w-[8px] animate-pulse h-[10px] lg:w-[30px] lg:h-[36px] top-[100px] lg:top-[75px] right-[40%] absolute"
           />
           <div className="w-full max-w-[240px] lg:max-w-[898px] mx-auto grid grid-cols-3 relative z-10">
             <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:right-[-12.25px] lg:before:bottom-[-25px] lg:before:right-[-25px] before:bg-[#110b20]">
@@ -731,7 +731,7 @@ const Policy = () => {
               <img
                 src="/icons/star-grey.svg"
                 alt="Star Grey"
-                className="absolute w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[38%] top-[-5px]"
+                className="absolute animate-pulse w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[38%] top-[-5px]"
               />
               <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
                 Privacy Policy and{" "}
@@ -751,7 +751,7 @@ const Policy = () => {
               <img
                 src="/icons/star-purple.svg"
                 alt="Star Grey"
-                className="absolute w-[17px] h-[20px] lg:w-[30px] lg:h-[36px] left-[-50px] bottom-[40%]"
+                className="absolute animate-pulse w-[17px] h-[20px] lg:w-[30px] lg:h-[36px] left-[-50px] bottom-[40%]"
               />
               <p className="text-white text-[14px] px-[15px] lg:px-[72px] leading-[30px] pb-[24px]">
                 At getlinked tech Hackathon 1.0, we value your privacy and are
@@ -811,27 +811,27 @@ const Policy = () => {
               <img
                 src="/icons/star-white.svg"
                 alt="Star White"
-                className="absolute w-[9px] h-[10px] lg:w-[15px] lg:h-[18px] left-[25%] bottom-[20%]"
+                className="absolute animate-pulse w-[9px] h-[10px] lg:w-[15px] lg:h-[18px] left-[25%] bottom-[20%]"
               />
               <img
                 src="/icons/star-grey.svg"
                 alt="Star Grey"
-                className="absolute w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[2%] bottom-[15%]"
+                className="absolute animate-pulse w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[2%] bottom-[15%]"
               />
               <img
                 src="/icons/star-dark-purple.svg"
                 alt="Star Dark Purple"
-                className="absolute w-[15px] h-[18px] left-[30%] bottom-[30%]"
+                className="absolute animate-pulse w-[15px] h-[18px] left-[30%] bottom-[30%]"
               />
               <img
                 src="/icons/star-white.svg"
                 alt="Star White"
-                className="absolute w-[7px] h-[8px] lg:w-[15px] lg:h-[18px] right-[22%] top-[20%]"
+                className="absolute animate-pulse w-[7px] h-[8px] lg:w-[15px] lg:h-[18px] right-[22%] top-[20%]"
               />
               <img
                 src="/icons/star-purple.svg"
                 alt="Star Purple"
-                className="absolute w-[17px] h-[20px] lg:w-[23px] lg:h-[28px] left-0 lg:left-[-5%] top-[20%]"
+                className="absolute animate-pulse w-[17px] h-[20px] lg:w-[23px] lg:h-[28px] left-0 lg:left-[-5%] top-[20%]"
               />
             </figure>
           </section>

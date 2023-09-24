@@ -9,22 +9,22 @@ export default function Footer() {
           <img
             src="/icons/star-white.svg"
             alt="Star White"
-            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute top-[10%] lg:top-[15%] left-[5px] lg:left-[20px]"
+            className="w-[9px] animate-pulse w-[10px] lg:w-[15px] lg:h-[18px] absolute top-[10%] lg:top-[15%] left-[5px] lg:left-[20px]"
           />
           <img
             src="/icons/star-white.svg"
             alt="Star White"
-            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute bottom-[15%] right-[20px]"
+            className="w-[9px] animate-pulse w-[10px] lg:w-[15px] lg:h-[18px] absolute bottom-[15%] right-[20px]"
           />
           <img
             src="/icons/star-purple.svg"
             alt="Star Purple"
-            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute bottom-[40px] right-[50%]"
+            className="w-[9px] animate-pulse w-[10px] lg:w-[15px] lg:h-[18px] absolute bottom-[40px] right-[50%]"
           />
           <img
             src="/icons/star-grey.svg"
             alt="Star Grey"
-            className="w-[9px] w-[10px] lg:w-[15px] lg:h-[18px] absolute top-[40px] right-[30%]"
+            className="w-[9px] animate-pulse w-[10px] lg:w-[15px] lg:h-[18px] absolute top-[40px] right-[30%]"
           />
           <div className="w-full max-w-[1086px] mx-auto flex flex-col md:flex-row gap-[40px] justify-between">
             <div className="w-full max-w-[412px] relative">
