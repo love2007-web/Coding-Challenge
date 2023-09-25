@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { attributesData } from "../data/atrributes";
 import { Disclosure, Transition } from "@headlessui/react";
 import { faqsData } from "../data/faqs";
+import Typewriter from 'typewriter-effect'
 import {
   TimelineLeft,
   TimelineMobile,
@@ -55,9 +56,28 @@ const Hero = () => {
           className="hidden animate-pulse lg:block absolute pointer-events-none top-[-100px] left-[600px] mix-blend-hard-light"
         />
         <h1 className="font-bold italic py-6 lg:text-[36px] text-white relative z-2 text-center lg:text-right">
-          Igniting a Revolution in {" "}
+          <Typewriter
+          options={{
+            loop: true
+          }}
+            onInit={(typewriter) =>{
+              typewriter
+                .typeString("Igniting a Revolution in HR Innovation")
+                .callFunction(() => {
+                  console.log("String typed Out");
+                })
+                .pauseFor(2500)
+                .deleteAll()
+                .callFunction(() => {
+                  console.log("All strings deleted");
+                })
+                
+                .start();
+              
+            }}
+          /> {" "}
           <span className="relative">
-            HR Innovation{" "}
+            &nbsp;{" "}
             <img
               src="/images/curved-line.svg"
               className="bottom-[-10px] lg:bottom-[-15px] left-[2px] absolute"
