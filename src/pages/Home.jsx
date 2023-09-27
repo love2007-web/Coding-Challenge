@@ -12,6 +12,7 @@ import Timeline from "../components/home/Timeline";
 import Rewards from "../components/home/Rewards";
 import Partners from "../components/home/Partners";
 import Policy from "../components/home/Policy";
+import "../styles/index.css"
 
 export default function Home() {
   return (

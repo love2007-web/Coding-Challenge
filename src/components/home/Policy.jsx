@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from "../Button";
 import Container from "../Container";
+import Zoom from "react-reveal/Zoom";
+import Rotate from "react-reveal/Rotate";
 
 const Policy = () => {
   return (
@@ -19,19 +21,27 @@ const Policy = () => {
                 alt="Star Grey"
                 className="absolute animate-pulse w-[8px] h-[8px] lg:w-[26px] lg:h-[32px] right-[38%] top-[-5px]"
               />
-              <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
-                Privacy Policy and{" "}
-              </h1>
-              <h1 className="relative z-2 text-[32px] text-primary font-clashdisplay font-bold">
-                Terms{" "}
-              </h1>
-              <p className="pt-4 text-[14px] text-[#FFFFFFBF]">
-                Last updated on September 12, 2023{" "}
-              </p>
-              <p className="pt-8 text-[14px]">
-                Below are our privacy & policy, which outline a lot of goodies.
-                it&rsquo;s our aim to always take of our participant
-              </p>
+              <Zoom top>
+                <h1 className="relative z-2 text-[32px] font-clashdisplay font-bold">
+                  Privacy Policy and{" "}
+                </h1>
+              </Zoom>
+              <Zoom bottom>
+                <h1 className="relative z-2 text-[32px] text-primary font-clashdisplay font-bold">
+                  Terms{" "}
+                </h1>
+              </Zoom>
+              <Zoom>
+                <p className="pt-4 text-[14px] text-[#FFFFFFBF]">
+                  Last updated on September 12, 2023{" "}
+                </p>
+              </Zoom>
+              <Zoom>
+                <p className="pt-8 text-[14px]">
+                  Below are our privacy & policy, which outline a lot of
+                  goodies. it&rsquo;s our aim to always take of our participant
+                </p>
+              </Zoom>
             </header>
             <div className="relative border-[1px] border-primary w-full max-w-[569px] mx-auto py-[59px] rounded-[5px]">
               <img
@@ -40,12 +50,14 @@ const Policy = () => {
                 className="absolute animate-pulse w-[17px] h-[20px] lg:w-[30px] lg:h-[36px] left-[-50px] bottom-[40%]"
               />
               <p className="text-white text-[14px] px-[15px] lg:px-[72px] leading-[30px] pb-[24px]">
-                At getlinked tech Hackathon 1.0, we value your privacy and are
-                committed to protecting your personal information. This Privacy
-                Policy outlines how we collect, use, disclose, and safeguard
-                your data when you participate in our tech hackathon event. By
-                participating in our event, you consent to the practices
-                described in this policy.
+                <Rotate bottom left cascade>
+                  At getlinked tech Hackathon 1.0, we value your privacy and are
+                  committed to protecting your personal information. This
+                  Privacy Policy outlines how we collect, use, disclose, and
+                  safeguard your data when you participate in our tech hackathon
+                  event. By participating in our event, you consent to the
+                  practices described in this policy.
+                </Rotate>
               </p>
               <div className="pl-[22px] lg:pl-[72px] pr-[22px] lg:pr-[39px] relative z-2">
                 <h1 className="relative z-2 text-primary font-clashdisplay font-bold">

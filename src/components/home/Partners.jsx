@@ -1,5 +1,6 @@
 import React from 'react';
 import Container from "../Container";
+import Flip from "react-reveal/Flip";
 
 const Partners = () => {
   return (
@@ -41,48 +42,50 @@ const Partners = () => {
             className="w-[8px] animate-pulse h-[10px] lg:w-[30px] lg:h-[36px] top-[100px] lg:top-[75px] right-[40%] absolute"
           />
           <div className="w-full max-w-[240px] lg:max-w-[898px] mx-auto grid grid-cols-3 relative z-10">
-            <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:right-[-12.25px] lg:before:bottom-[-25px] lg:before:right-[-25px] before:bg-[#110b20]">
-              <img
-                src="/images/liberty.svg"
-                alt="Liberty"
-                className="w-[30px] shaking-element h-[30px] lg:w-auto lg:h-auto"
-              />
-            </div>
-            <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary border-l-[2px] lg:border-l-[4px] border-primary border-r-[2px] lg:border-r-[4px]">
-              <img
-                src="/images/libertypay.svg"
-                alt="Liberty"
-                className="w-[56px] shaking-element lg:w-auto lg:h-auto"
-              />
-            </div>
-            <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:left-[-12.25px] lg:before:bottom-[-25px] lg:before:left-[-25px] before:bg-[#110b20]">
-              <img
-                src="/images/winwise.svg"
-                alt="Winwise"
-                className="w-[34px] shaking-element h-[30px] lg:w-auto lg:h-auto"
-              />
-            </div>
-            <div className="p-5 grid place-items-center">
-              <img
-                src="/images/wisper.svg"
-                alt="Wisper"
-                className="w-[39px] shaking-element lg:w-auto lg:h-auto"
-              />
-            </div>
-            <div className="p-5 grid place-items-center border-l-[2px] lg:border-l-[4px] border-r-[2px] lg:border-r-[4px] border-primary">
-              <img
-                src="/images/paybox.svg"
-                alt="Paybox"
-                className="w-[54px] shaking-element h-[30px] lg:w-auto lg:h-auto"
-              />
-            </div>
-            <div className="p-5 grid place-items-center">
-              <img
-                src="/images/vizual-plus.svg"
-                alt="Vizual Plus"
-                className="w-[69px] shaking-element h-[30px] lg:w-auto lg:h-auto"
-              />
-            </div>
+            <Flip top cascade>
+              <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:right-[-12.25px] lg:before:bottom-[-25px] lg:before:right-[-25px] before:bg-[#110b20]">
+                <img
+                  src="/images/liberty.svg"
+                  alt="Liberty"
+                  className="w-[30px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+                />
+              </div>
+              <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary border-l-[2px] lg:border-l-[4px] border-primary border-r-[2px] lg:border-r-[4px]">
+                <img
+                  src="/images/libertypay.svg"
+                  alt="Liberty"
+                  className="w-[56px] shaking-element lg:w-auto lg:h-auto"
+                />
+              </div>
+              <div className="p-5 grid place-items-center border-b-[2px] lg:border-b-[4px] border-primary relative before:content-[''] before:w-[25px] before:h-[25px] lg:before:w-[50px] lg:before:h-[50px] before:absolute before:bottom-[-12.25px] before:left-[-12.25px] lg:before:bottom-[-25px] lg:before:left-[-25px] before:bg-[#110b20]">
+                <img
+                  src="/images/winwise.svg"
+                  alt="Winwise"
+                  className="w-[34px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+                />
+              </div>
+              <div className="p-5 grid place-items-center">
+                <img
+                  src="/images/wisper.svg"
+                  alt="Wisper"
+                  className="w-[39px] shaking-element lg:w-auto lg:h-auto"
+                />
+              </div>
+              <div className="p-5 grid place-items-center border-l-[2px] lg:border-l-[4px] border-r-[2px] lg:border-r-[4px] border-primary">
+                <img
+                  src="/images/paybox.svg"
+                  alt="Paybox"
+                  className="w-[54px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+                />
+              </div>
+              <div className="p-5 grid place-items-center">
+                <img
+                  src="/images/vizual-plus.svg"
+                  alt="Vizual Plus"
+                  className="w-[69px] shaking-element h-[30px] lg:w-auto lg:h-auto"
+                />
+              </div>
+            </Flip>
           </div>
         </div>
       </Container>
