@@ -1,5 +1,7 @@
 import React from 'react';
 import Container from "../Container";
+import Flip from "react-reveal/Flip";
+
 
 
 const Rewards = () => {
@@ -69,58 +71,68 @@ const Rewards = () => {
               </p>
             </header>
             <section className="pt-20 lg:pt-56 flex gap-2 max-w-max lg:max-w-full w-full mx-auto lg:mx-auto-0">
-              <div className="flex flex-1  px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] pb-[22px] lg:h-[296px] relative">
-                <img
-                  src="/images/silver-medal.svg"
-                  alt="Silver medal"
-                  className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
-                />
-                <div className="text-center text-white self-end w-full">
-                  <h3 className="font-bold text-[12px] lg:text-[32px]">2nd</h3>
-                  <h2 className="font-semibold text-[12px] lg:text-[24px]">
-                    Runner
-                  </h2>
-                  <h1 className="text-[14px] text-primary font-bold lg:pt-2">
-                    N300,000
-                  </h1>
-                </div>
-              </div>
-              <div className="relative grid place-items-center w-[125px] lg:w-[296px]">
-                <img
-                  src="/images/gold-medal.svg"
-                  alt="Gold medal"
-                  className="absolute top-[-60px] lg:top-[-40%] left-[50%] translate-x-[-50%] block"
-                />
-                <div className="flex px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[147px] lg:h-[347px] pb-[22px]">
+              <Flip right>
+                <div className="flex flex-1  px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] pb-[22px] lg:h-[296px] relative">
+                  <img
+                    src="/images/silver-medal.svg"
+                    alt="Silver medal"
+                    className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
+                  />
                   <div className="text-center text-white self-end w-full">
                     <h3 className="font-bold text-[12px] lg:text-[32px]">
-                      1st
+                      2nd
                     </h3>
                     <h2 className="font-semibold text-[12px] lg:text-[24px]">
                       Runner
                     </h2>
                     <h1 className="text-[14px] text-primary font-bold lg:pt-2">
-                      N400,000
+                      N300,000
                     </h1>
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-1 px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] lg:h-[296px] pb-[22px] relative">
-                <img
-                  src="/images/bronze-medal.svg"
-                  alt="Bronze medal"
-                  className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
-                />
-                <div className="text-center text-white self-end w-full">
-                  <h3 className="font-bold text-[12px] lg:text-[32px]">3rd</h3>
-                  <h2 className="font-semibold text-[12px] lg:text-[24px]">
-                    Runner
-                  </h2>
-                  <h1 className="text-[14px] text-primary font-bold lg:pt-2">
-                    N150,000
-                  </h1>
+              </Flip>
+              <Flip right>
+                <div className="relative grid place-items-center w-[125px] lg:w-[296px]">
+                  <img
+                    src="/images/gold-medal.svg"
+                    alt="Gold medal"
+                    className="absolute top-[-60px] lg:top-[-40%] left-[50%] translate-x-[-50%] block"
+                  />
+                  <div className="flex px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[147px] lg:h-[347px] pb-[22px]">
+                    <div className="text-center text-white self-end w-full">
+                      <h3 className="font-bold text-[12px] lg:text-[32px]">
+                        1st
+                      </h3>
+                      <h2 className="font-semibold text-[12px] lg:text-[24px]">
+                        Runner
+                      </h2>
+                      <h1 className="text-[14px] text-primary font-bold lg:pt-2">
+                        N400,000
+                      </h1>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Flip>
+              <Flip right>
+                <div className="flex flex-1 px-2 text-center pb-5 border-primary border-[1px] rounded-[8px] w-[90px] lg:w-[212px] h-[125px] lg:h-[296px] pb-[22px] relative">
+                  <img
+                    src="/images/bronze-medal.svg"
+                    alt="Bronze medal"
+                    className="absolute top-[-45px] left-[50%] translate-x-[-50%]"
+                  />
+                  <div className="text-center text-white self-end w-full">
+                    <h3 className="font-bold text-[12px] lg:text-[32px]">
+                      3rd
+                    </h3>
+                    <h2 className="font-semibold text-[12px] lg:text-[24px]">
+                      Runner
+                    </h2>
+                    <h1 className="text-[14px] text-primary font-bold lg:pt-2">
+                      N150,000
+                    </h1>
+                  </div>
+                </div>
+              </Flip>
             </section>
           </div>
         </div>
